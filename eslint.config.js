@@ -53,13 +53,17 @@ export default tseslint.config(
           },
         },
       ],
-    'import/no-unresolved': 'error', // Ошибка, если импортированный модуль не существует
-    'import/named': 'error', // Проверка на named экспорты
-    'import/default': 'error', // Проверка на default экспорты
-    'import/namespace': 'error', // Проверка на пространство имён
-    "@typescript-eslint/explicit-function-return-type": "error",
-    'react/jsx-uses-react': 'error', // Отслеживание использования React
-
+      'import/no-unresolved': 'error', // Ошибка, если импортированный модуль не существует
+      'import/named': 'error', // Проверка на named экспорты
+      'import/default': 'error', // Проверка на default экспорты
+      'import/namespace': 'error', // Проверка на пространство имён
+      '@typescript-eslint/explicit-function-return-type': 'error',
+      'react/jsx-uses-react': 'error', // Отслеживание использования React
+      'react/jsx-uses-react': 'error', // Отслеживание использования React
+      'react/jsx-uses-vars': 'error', // Отслеживание использования переменных в JSX
+      'react/jsx-key': 'error', // Проверка на наличие атрибута key в списках
+      'react-hooks/rules-of-hooks': 'error', // Проверка правильного использования хуков
+      'react-hooks/exhaustive-deps': 'warn', // Проверка зависимостей в хуках useEffect и т.д.
     },
     settings: {
       react: {

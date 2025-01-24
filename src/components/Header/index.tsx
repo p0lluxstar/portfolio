@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { URL_GITHUB, NAV_LIST_ITEM } from '../../constants/components';
 import styles from './index.module.scss';
 
 export default function Header(): JSX.Element {
+  const { t } = useTranslation();
+
   return (
     <header className={`${styles.header} ${styles.center}`}>
       <h3>
@@ -17,7 +20,7 @@ export default function Header(): JSX.Element {
                 className={`${styles.link} ${styles['link--nav']}`}
                 href={`#${item}`}
               >
-                {item}
+                {t(`${item}`)}
               </a>
             </li>
           ))}

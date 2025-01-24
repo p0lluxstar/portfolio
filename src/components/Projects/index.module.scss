@@ -1,0 +1,68 @@
+@import '../../styles/vars';
+
+.section {
+  margin-top: 5em;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.projectsGrid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2em;
+}
+
+.project {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: $shadow;
+  transition: transform 0.2s linear;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.projectDescription {
+  margin-top: 1em;
+}
+
+.projectStack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+.projectStackItem {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: $clr-fg-alt;
+}
+
+.project .linkIcon {
+  margin-left: 0.5em;
+}
+
+.link {
+  color: $clr-primary;
+  padding: 0 0 0.3em 0;
+  position: relative;
+
+  &:hover {
+    color: $clr-primary;
+  }
+
+  .linkIcon {
+    color: $clr-fg;
+    font-size: 1.2rem;
+  }
+}

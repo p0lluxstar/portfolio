@@ -8,30 +8,83 @@
 .about {
   flex-direction: column;
   margin-top: 3em;
+
+  .aboutName {
+    color: $clr-primary;
+  }
+
+  .aboutRole {
+    margin-top: 1.2em;
+  }
+
+  .aboutDesc {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+
+  .aboutDesc,
+  .aboutContact {
+    margin-top: 2.4em;
+  }
+
+  .about .linkIcon {
+    margin-right: 0.8em;
+  }
+
+  .about .btnOutline {
+    margin-right: 1em;
+  }
 }
 
-.about__name {
+.btn {
+  display: block;
+  padding: 0.8em 1.4em;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btnOutline {
+  color: $clr-primary;
+  border: 2px solid $clr-primary;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btnOutline:focus,
+.btnOutline:hover {
+  color: $clr-bg;
+}
+
+.btnOutline:before {
+  content: '';
+  position: absolute;
+  background-color: $clr-primary;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: right 0.2s ease-in-out;
+}
+
+.btnOutline:hover::before,
+.btnOutline:focus::before {
+  right: 0;
+}
+
+.btnIcon {
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.btnIcon:hover,
+.btnIcon:focus {
   color: $clr-primary;
 }
 
-.about__role {
-  margin-top: 1.2em;
-}
-
-.about__desc {
-  font-size: 1rem;
-  max-width: 600px;
-}
-
-.about__desc,
-.about__contact {
-  margin-top: 2.4em;
-}
-
-.about .link--icon {
-  margin-right: 0.8em;
-}
-
-.about .btn--outline {
-  margin-right: 1em;
+.btnIcon:active {
+  transform: translateY(-5px);
 }
