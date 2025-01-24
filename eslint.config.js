@@ -4,6 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
 import importPlugin from 'eslint-plugin-import';
+import reactPlugin from 'eslint-plugin-react';
 
 export default tseslint.config(
   { ignores: ['dist'] },
@@ -18,6 +19,7 @@ export default tseslint.config(
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
       import: importPlugin,
+      react: reactPlugin,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -51,6 +53,23 @@ export default tseslint.config(
           },
         },
       ],
+    'import/no-unresolved': 'error', // Ошибка, если импортированный модуль не существует
+    'import/named': 'error', // Проверка на named экспорты
+    'import/default': 'error', // Проверка на default экспорты
+    'import/namespace': 'error', // Проверка на пространство имён
+    "@typescript-eslint/explicit-function-return-type": "error",
+    'react/jsx-uses-react': 'error', // Отслеживание использования React
+
+    },
+    settings: {
+      react: {
+        version: 'detect', // Автоматическое определение версии React
+      },
+      'import/resolver': {
+        node: {
+          extensions: ['.js', '.jsx', '.ts', '.tsx'], // Указание поддерживаемых расширений
+        },
+      },
     },
   }
 );
