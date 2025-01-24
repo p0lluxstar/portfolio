@@ -2,8 +2,6 @@ import { URL_GITHUB, NAV_LIST_ITEM } from '../../constants/components';
 import styles from './index.module.scss';
 
 export default function Header(): JSX.Element {
-  
-  console.log('a');
   return (
     <header className={`${styles.header} ${styles.center}`}>
       <h3>
