@@ -1,13 +1,8 @@
 @import '../../styles/vars';
+@import '../../styles/mixins';
 
 .section {
-  margin-top: 5em;
-}
-
-.sectionTitle {
-  text-align: center;
-  margin-bottom: 1em;
-  text-transform: uppercase;
+  @include section;
 }
 
 .projectsGrid {
@@ -53,13 +48,7 @@
 }
 
 .link {
-  color: $clr-primary;
-  padding: 0 0 0.3em 0;
-  position: relative;
-
-  &:hover {
-    color: $clr-primary;
-  }
+  @include link;
 
   .linkIcon {
     color: $clr-fg;

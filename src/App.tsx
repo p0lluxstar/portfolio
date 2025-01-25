@@ -1,8 +1,10 @@
 import 'normalize.css';
 import './styles/global.scss';
 import { useTranslation } from 'react-i18next';
+import Footer from './components/Footer';
 import Header from './components/Header/index';
 import Main from './components/Main';
+import Scroll from './components/Scroll';
 import i18n from './i18n';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -22,22 +24,8 @@ function App(): JSX.Element {
       </div>
       <Header />
       <Main />
-      <footer className="footer">
-        <a
-          href="https://github.com/rjshkhr/cleanfolio-minimal"
-          className="link footer__link"
-        >
-          Created By Raj Shekhar
-        </a>
-      </footer>
-
-      <div className="scroll-container">
-        <div className="scroll-top">
-          <a aria-label="Scroll up" href="#top">
-            <i aria-hidden="true" className="fas fa-arrow-up"></i>
-          </a>
-        </div>
-      </div>
+      <Footer />
+      <Scroll />
     </>
   );
 }

@@ -1,8 +1,8 @@
 @import '../../styles/vars';
+@import '../../styles/mixins';
 
 .center {
-  display: flex;
-  align-items: center;
+  @include center;
 }
 
 .header {
@@ -13,12 +13,7 @@
   justify-content: space-between;
 
   .link {
-    color: $clr-primary;
-    padding: 0 0 0.3em 0;
-    position: relative;
-    &:hover {
-      color: $clr-primary;
-    }
+    @include link;
 
     &::before {
       content: '';
@@ -38,9 +33,8 @@
   }
 
   .nav {
-    .link--nav {
+    .navLink{
       color: $clr-fg;
-      text-transform: lowercase;
       font-weight: 500;
     }
 
@@ -49,12 +43,12 @@
       font-size: 1.2rem;
     } */
 
-    .nav__list {
+    .navList {
       margin-right: 1.5em;
       display: flex;
     }
 
-    .nav__list-item {
+    .navListItem {
       margin-left: 1.5em;
     }
 

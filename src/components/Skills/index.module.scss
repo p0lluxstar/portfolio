@@ -1,39 +1,16 @@
 @import '../../styles/vars';
+@import '../../styles/mixins';
 
 .section {
-  margin-top: 5em;
-}
-
-.sectionTitle {
-  text-align: center;
-  margin-bottom: 1em;
-  text-transform: uppercase;
-}
-
-.skillsList {
-  max-width: 450px;
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include section;
 }
 
 .skillsListItem {
   margin: 0.5em;
 }
 
-.btnPlain:hover {
-  transform: translateY(-4px);
-}
-
 .btn {
-  display: block;
-  padding: 0.8em 1.4em;
-  font-weight: 500;
-  font-size: 0.9rem;
-  text-transform: lowercase;
-  transition: transform 0.2s ease-in-out;
+  @include btn;
 }
 
 .btnPlain {
@@ -41,4 +18,8 @@
   background-color: $clr-bg-alt;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   border: 0;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
 }

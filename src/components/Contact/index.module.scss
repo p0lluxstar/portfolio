@@ -1,5 +1,22 @@
 @import '../../styles/vars';
+@import '../../styles/mixins';
 
 .contact {
   flex-direction: column;
+}
+
+.section{
+  @include section;
+}
+
+.center{
+  @include center;
+}
+
+.btn{
+  @include btn;
+}
+
+.btnOutline {
+  @include btnOutline;
 }

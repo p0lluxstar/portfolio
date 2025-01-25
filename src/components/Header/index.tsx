@@ -13,11 +13,11 @@ export default function Header(): JSX.Element {
         </a>
       </h3>
       <nav className={`${styles.nav} ${styles.center}`}>
-        <ul className={`${styles.nav__list} ${styles.center}`}>
+        <ul className={`${styles.navList} ${styles.center}`}>
           {NAV_LIST_ITEM.map((item) => (
-            <li className={styles['nav__list-item']} key={item}>
+            <li className={styles.navListItem} key={item}>
               <a
-                className={`${styles.link} ${styles['link--nav']}`}
+                className={`${styles.link} ${styles.navLink}`}
                 href={`#${item}`}
               >
                 {t(`${item}`)}
