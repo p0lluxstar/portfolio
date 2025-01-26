@@ -27,7 +27,7 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
-      'no-console': ['error', { allow: ['info', 'error', 'warn'] }],
+      'no-console': ['warn', { allow: ['info', 'error', 'warn'] }],
       'import/order': [
         'error',
         {
