@@ -6,10 +6,12 @@ export default function About(): JSX.Element {
 
   return (
     <div className={`${styles.about} ${styles.center}`}>
-      <h1>
-        {t('greeting')}
-        <span className={styles.aboutName}> {t('fullName')}</span>
-      </h1>
+      <div>
+        <h1>
+          {t('greeting')}
+          <span className={styles.aboutName}> {t('fullName')}</span>
+        </h1>
+      </div>
       <h2 className={styles.aboutRole}>A Front end Developer.</h2>
       <p className={styles.aboutDesc}>
         Consectetur neque sed quam molestiae consectetur nesciunt sit alias

@@ -17,7 +17,7 @@
   padding: 2em;
   margin: 0 auto;
   text-align: center;
-  box-shadow: $shadow;
+  box-shadow: var(--shadow);
   transition: transform 0.2s linear;
 }
 
@@ -40,7 +40,7 @@
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
-  color: $clr-fg-alt;
+  color: var(--clr-fg-alt);
 }
 
 .project .linkIcon {
@@ -51,7 +51,7 @@
   @include link;
 
   .linkIcon {
-    color: $clr-fg;
+    color: var(--clr-fg);
     font-size: 1.2rem;
   }
 }

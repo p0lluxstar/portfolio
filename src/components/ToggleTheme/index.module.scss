@@ -1,0 +1,10 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.btn {
+  @include btn;
+}
+
+.btnIcon {
+  @include btnIcon;
+}

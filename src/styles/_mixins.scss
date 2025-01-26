@@ -23,11 +23,27 @@
 }
 
 @mixin link {
-  color: $clr-primary;
+  color: var(--clr-primary);
   padding: 0 0 0.3em 0;
   position: relative;
   &:hover {
-    color: $clr-primary;
+    color: var(--clr-primary);
+  }
+
+  &::before {
+    content: '';
+    display: inline;
+    width: 0%;
+    height: 0.2em;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--clr-primary);
+    transition: width 0.2s ease-in;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    width: 100%;
   }
 }
 
@@ -41,21 +57,21 @@
 }
 
 @mixin btnOutline {
-  color: $clr-primary;
-  border: 2px solid $clr-primary;
+  color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
   position: relative;
   overflow: hidden;
   z-index: 1;
 
   &:focus,
   &:hover {
-    color: $clr-bg;
+    color: var(--clr-bg);
   }
 
   &:before {
     content: '';
     position: absolute;
-    background-color: $clr-primary;
+    background-color: var(--clr-primary);
     right: 100%;
     bottom: 0;
     left: 0;
@@ -70,13 +86,13 @@
   }
 }
 
-@mixin btnIcon {
+@mixin btnIcon($isActive: false) {
   padding: 0;
   font-size: 1.2rem;
+  color: if($isActive, var(--clr-primary), null);
 
-  &:hover,
-  &:focus {
-    color: $clr-primary;
+  &:hover {
+    color: var(--clr-primary);
   }
 
   &:active {
