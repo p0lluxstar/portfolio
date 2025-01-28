@@ -1,57 +1,57 @@
-@import '../../styles/vars';
-@import '../../styles/mixins';
+@use '../../styles/vars';
+@use '../../styles/mixins' as mixins;
 
 .section {
-  @include section;
+  @include mixins.section;
 }
 
 .projectsGrid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
   grid-gap: 2em;
 }
 
-.project {
-  padding: 2em;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s linear;
-}
+// .project {
+//   padding: 2em;
+//   margin: 0 auto;
+//   text-align: center;
+//   box-shadow: var(--shadow);
+//   transition: transform 0.2s linear;
+// }
 
-.project:hover {
-  transform: translateY(-7px);
-}
+// .project:hover {
+//   transform: translateY(-7px);
+// }
 
-.projectDescription {
-  margin-top: 1em;
-}
+// .projectDescription {
+//   margin-top: 1em;
+// }
 
-.projectStack {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1.2em 0;
-}
+// .projectStack {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   margin: 1.2em 0;
+// }
 
-.projectStackItem {
-  margin: 0.5em;
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: var(--clr-fg-alt);
-}
+// .projectStackItem {
+//   margin: 0.5em;
+//   font-weight: 500;
+//   font-size: 0.8rem;
+//   color: var(--clr-fg-alt);
+// }
 
-.project .linkIcon {
-  margin-left: 0.5em;
-}
+// .project .linkIcon {
+//   margin-left: 0.5em;
+// }
 
-.link {
-  @include link;
+// .link {
+//   @include mixins.link;
 
-  .linkIcon {
-    color: var(--clr-fg);
-    font-size: 1.2rem;
-  }
-}
+//   .linkIcon {
+//     color: var(--clr-fg);
+//     font-size: 1.2rem;
+//   }
+// }

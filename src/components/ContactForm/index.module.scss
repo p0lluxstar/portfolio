@@ -1,5 +1,5 @@
-@import '../../styles/vars';
-@import '../../styles/mixins';
+@use '../../styles/vars';
+@use '../../styles/mixins' as mixins;
 
 .contactFormContainer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -43,9 +43,9 @@
 }
 
 .btn {
-  @include btn;
+  @include mixins.btn;
 }
 
 .btnOutline {
-  @include btnOutline;
+  @include mixins.btnOutline;
 }

@@ -1,5 +1,5 @@
-@import '../../styles/vars';
-@import '../../styles/mixins';
+@use '../../styles/vars';
+@use '../../styles/mixins' as mixins;
 
 .footer {
   padding: 3em 0;
@@ -14,5 +14,5 @@
 }
 
 .link {
-    @include link
+  @include mixins.link;
 }

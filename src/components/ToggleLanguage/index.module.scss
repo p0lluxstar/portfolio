@@ -1,14 +1,14 @@
-@import '../../styles/vars';
-@import '../../styles/mixins';
+@use '../../styles/vars';
+@use '../../styles/mixins' as mixins;
 
 .btn {
-  @include btn;
+  @include mixins.btn;
 }
 
 .btnIcon {
-  @include btnIcon;
+  @include mixins.btnIcon;
 }
 
 .btnActiveIcon {
-  @include btnIcon(true)
+  @include mixins.btnIcon(true)
 }

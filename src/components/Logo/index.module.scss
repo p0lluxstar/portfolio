@@ -1,4 +1,4 @@
-@import '../../styles/mixins';
+@use '../../styles/mixins' as mixins;
 
 .logoWrapper {
   display: flex;
@@ -22,5 +22,5 @@
 }
 
 .link {
-  @include link;
+  @include mixins.link;
 }
