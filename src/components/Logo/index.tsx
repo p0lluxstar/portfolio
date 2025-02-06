@@ -1,4 +1,4 @@
-import profileIMG from '../../assets/img/profile.jpg';
+import profileIMG from '../../../public/assets/img/profile.jpg';
 import { URL_GITHUB } from '../../constants/components';
 import styles from './index.module.scss';
 
@@ -11,7 +11,7 @@ export default function Logo(): JSX.Element {
       </div>
       <h3>
         <a href={URL_GITHUB} className={styles.link}>
-          АE.
+          АE
         </a>
       </h3>
     </div>

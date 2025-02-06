@@ -1,7 +1,9 @@
 @use '../../styles/mixins' as mixins;
+@use '../../styles/media' as media;
 
 .navWrapper {
   display: flex;
+
   .nav {
     .navLink {
       color: var(--clr-fg);
@@ -16,21 +18,45 @@
     .navList {
       margin-right: 1.5em;
       display: flex;
+
+      @include media.mobile {
+        flex-direction: column;
+        padding: 1em 0;
+        position: absolute;
+        right: 0;
+        top: 5em;
+        width: 0;
+        overflow: hidden;
+        transition: width 0.2s ease-in-out;
+        margin-right: 0px;
+      }
     }
 
     .navListItem {
       margin-left: 1.5em;
+      @include media.mobile {
+        margin-left: 0;
+      }
     }
 
-    .navHamburger {
-      display: none;
-      width: 1em;
+    .displayNavList {
+      @include media.mobile {
+        width: 20%;
+      }
+    }
+
+    .center {
+      @include mixins.center;
     }
   }
 
   .btnIconWrapper {
     display: flex;
     gap: 10px;
+    align-items: center;
+    @include media.mobile {
+      gap: 16px;
+    }
   }
 
   .link {

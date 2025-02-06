@@ -5,6 +5,11 @@
   @include mixins.section;
 }
 
+.center {
+  @include mixins.center;
+  flex-direction: column;
+}
+
 .skillsListItem {
   margin: 0.5em;
 }

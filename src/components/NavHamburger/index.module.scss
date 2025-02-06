@@ -1,5 +1,6 @@
 @use '../../styles/vars';
 @use '../../styles/mixins' as mixins;
+@use '../../styles/media' as media;
 
 .btn {
   @include mixins.btn;
@@ -7,6 +8,16 @@
 
 .btnIcon {
   @include mixins.btnIcon;
+}
+
+.navHamburger {
+  display: none;
+  width: 1em;
+
+  @include media.mobile {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .btnActiveIcon {

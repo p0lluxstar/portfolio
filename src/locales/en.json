@@ -4,5 +4,15 @@
   "skills": "Skills",
   "contact": "Contact",
   "greeting": "Hi, I am",
-  "fullName": "Amelichev Evgeniy."
+  "fullName": "Amelichev Evgeniy",
+  "profession": "Junior Frontend Developer.",
+  "aboutMe": "I am an enthusiastic and detail-oriented Frontend Developer seeking a Junior Frontend Developer position in your company. I want to apply my skills in development, solving complex problems, and assisting in the timely completion of projects. I am eager to learn, grow, and contribute to the team!",
+  "rezume": "resume",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "submit": "submit",
+  "eyn": "Enter Your Name",
+  "eye": "Enter Your Email",
+  "eym": "Enter Your Message"
 }

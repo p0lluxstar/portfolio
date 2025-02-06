@@ -12,7 +12,11 @@ export default function ToggleTheme(): JSX.Element {
       className={`${styles.btn} ${styles.btnIcon}`}
       onClick={themeContext.toggleTheme}
     >
-      <i aria-hidden="true" id="btn-theme" className={'fa fa-moon-o'}></i>
+      <i
+        aria-hidden="true"
+        id="btn-theme"
+        className={`  ${themeContext.theme === 'light' ? `${'fa fa-moon-o'}` : `${styles.btnActiveIcon} ${'fa fa-sun-o'}`}`}
+      ></i>
     </button>
   );
 }

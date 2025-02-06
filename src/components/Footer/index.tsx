@@ -7,7 +7,7 @@ export default function Footer(): JSX.Element {
         href="https://github.com/"
         className={`${styles.link} ${styles.footerLink}`}
       >
-        Created By
+        2025 AE
       </a>
     </footer>
   );

@@ -1,8 +1,11 @@
 import emailjs from 'emailjs-com';
+import { useTranslation } from 'react-i18next';
 import styles from './index.module.scss';
 const ENV = import.meta.env;
 
 export default function ContactForm(): JSX.Element {
+  const { t } = useTranslation();
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
 
@@ -32,11 +35,11 @@ export default function ContactForm(): JSX.Element {
       <form onSubmit={handleSubmit} action="#" className={styles.contacForm}>
         <div className={styles.contactFormField}>
           <label className={styles.contactFormLabel} htmlFor="name">
-            Name
+            {t('name')}
           </label>
           <input
             required
-            placeholder="Enter Your Name"
+            placeholder={t('eyn')}
             type="text"
             className={styles.contactFormInput}
             name="name"
@@ -45,11 +48,11 @@ export default function ContactForm(): JSX.Element {
         </div>
         <div className={styles.contactFormField}>
           <label className={styles.contactFormLabel} htmlFor="email">
-            Email
+            {t('email')}
           </label>
           <input
             required
-            placeholder="Enter Your Email"
+            placeholder={t('eye')}
             type="text"
             className={styles.contactFormInput}
             name="email"
@@ -58,19 +61,19 @@ export default function ContactForm(): JSX.Element {
         </div>
         <div className={styles.contactFormField}>
           <label className={styles.contactFormLabel} htmlFor="message">
-            Message
+            {t('message')}
           </label>
           <textarea
             required
             rows={10}
             className={styles.contactFormInput}
-            placeholder="Enter Your Message"
+            placeholder={t('eym')}
             name="message"
             id="message"
           ></textarea>
         </div>
         <button type="submit" className={`${styles.btn} ${styles.btnOutline}`}>
-          Submit
+          {t('submit')}
         </button>
       </form>
     </div>

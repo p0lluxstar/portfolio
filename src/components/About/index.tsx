@@ -12,17 +12,13 @@ export default function About(): JSX.Element {
           <span className={styles.aboutName}> {t('fullName')}</span>
         </h1>
       </div>
-      <h2 className={styles.aboutRole}>A Front end Developer.</h2>
-      <p className={styles.aboutDesc}>
-        Consectetur neque sed quam molestiae consectetur nesciunt sit alias
-        Vitae libero perferendis reprehenderit optio veritatis Accusantium at
-        voluptatum cumque temporibus et Explicabo iste porro quis numquam
-        distinctio Repellendus adipisci nam perferendis amet eaque hic
-        Voluptates
-      </p>
+      <h2 className={styles.aboutRole}>{t('profession')}</h2>
+      <p className={styles.aboutDesc}>{t('aboutMe')}</p>
       <div className={`${styles.aboutContact} ${styles.center}`}>
         <a href="https://example.com">
-          <span className={`${styles.btn} ${styles.btnOutline}`}>Resume</span>
+          <span className={`${styles.btn} ${styles.btnOutline}`}>
+            {t('rezume')}
+          </span>
         </a>
       </div>
     </div>

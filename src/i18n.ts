@@ -15,7 +15,7 @@ i18n
     },
     fallbackLng: 'ru', // Язык по умолчанию
     interpolation: {
-      escapeValue: false, // Отключение экранирования (не нужно в React)
+      escapeValue: false,
     },
   });
 

@@ -1,3 +1,5 @@
+@use './media' as media;
+
 @mixin center {
   display: flex;
   align-items: center;
@@ -13,7 +15,7 @@
   }
 
   .skillsList {
-    max-width: 450px;
+    max-width: 600px;
     width: 95%;
     margin: 0 auto;
     display: flex;
@@ -97,5 +99,8 @@
 
   &:active {
     transform: translateY(-5px);
+  }
+  @include media.mobile {
+    font-size: 2rem;
   }
 }
