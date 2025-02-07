@@ -22,9 +22,7 @@ body {
   line-height: 1.5;
   color: var(--clr-fg);
   // background: var(--clr-bg);
-  background: var(--bg);
-  background-attachment: fixed;
-  background-size: cover;
+  background: var(--bg) fixed top center;
 }
 
 ::-moz-selection {

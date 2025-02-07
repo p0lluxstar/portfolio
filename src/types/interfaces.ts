@@ -1,6 +1,8 @@
 export interface IProjectData {
-  name: string;
+  id: number;
+  name: { en: string; ru: string };
   imgSrc: string;
+  description: { en: string; ru: string };
   stack: string[];
   links: {
     github: string;

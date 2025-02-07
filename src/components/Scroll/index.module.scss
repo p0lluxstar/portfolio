@@ -5,4 +5,8 @@
   background-color: transparent;
   font-size: 1.8rem;
   transition: transform 0.2s ease-in-out;
+
+  &:hover{
+    opacity: 0.8;
+  }
 }

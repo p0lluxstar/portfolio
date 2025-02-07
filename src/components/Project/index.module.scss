@@ -38,6 +38,10 @@
   width: 100%;
 }
 
+.project:hover {
+  transform: translateY(-7px);
+}
+
 .project:hover .details {
   left: -90%;
 }
@@ -69,9 +73,10 @@
   padding: 10px;
 }
 
-.projectText {
+.projectDesc {
   text-align: justify;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .projectTitle {
@@ -107,4 +112,6 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
 }

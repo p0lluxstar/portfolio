@@ -8,6 +8,7 @@ interface ProjectProps {
 
 export default function ProjectTest({ props }: ProjectProps): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
+  const getLangFromLS = localStorage.getItem('i18nextLng');
 
   return (
     <div className={styles.project}>
@@ -16,9 +17,13 @@ export default function ProjectTest({ props }: ProjectProps): JSX.Element {
       </div>
       <div className={`${styles.details} ${isOpen ? `${styles.open}` : ''}`}>
         <div className={styles.detailsData}>
-          <h3 className={styles.projectTitle}>{props.name}</h3>
-          <p className={styles.projectText}>
-            Какой-то текст, какой-то текст, какой-то текст, какой-то текст.
+          <h3 className={styles.projectTitle}>
+            {getLangFromLS === 'ru' ? props.name.ru : props.name.en}
+          </h3>
+          <p className={styles.projectDesc}>
+            {getLangFromLS === 'ru'
+              ? props.description.ru
+              : props.description.en}
           </p>
           <ul className={styles.projectStack}>
             {props.stack.map((item) => (
@@ -31,6 +36,8 @@ export default function ProjectTest({ props }: ProjectProps): JSX.Element {
             <a
               href={props.links.github}
               aria-label="source code"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${styles.link} ${styles.linkIcon}`}
             >
               <i aria-hidden="true" className="fa fa-github"></i>
@@ -38,6 +45,8 @@ export default function ProjectTest({ props }: ProjectProps): JSX.Element {
             <a
               href={props.links.sait}
               aria-label="live preview"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${styles.link} ${styles.linkIcon}`}
             >
               <i aria-hidden="true" className="fa fa fa-external-link"></i>

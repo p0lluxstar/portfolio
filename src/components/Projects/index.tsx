@@ -17,7 +17,7 @@ export default function Projects(): JSX.Element {
         </div>
         <div className={styles.projectsGrid}>
           {PROJECTS_DATA.map((item) => (
-            <Project props={item} key={item.name} />
+            <Project props={item} key={item.id} />
           ))}
         </div>
       </section>

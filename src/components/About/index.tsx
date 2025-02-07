@@ -15,11 +15,12 @@ export default function About(): JSX.Element {
       <h2 className={styles.aboutRole}>{t('profession')}</h2>
       <p className={styles.aboutDesc}>{t('aboutMe')}</p>
       <div className={`${styles.aboutContact} ${styles.center}`}>
-        <a href="https://example.com">
-          <span className={`${styles.btn} ${styles.btnOutline}`}>
-            {t('rezume')}
-          </span>
-        </a>
+        <button
+          onClick={() => window.open('assets/docs/rezume.pdf', '_blank')}
+          className={`${styles.btn} ${styles.btnOutline}`}
+        >
+          {t('rezume')}
+        </button>
       </div>
     </div>
   );
