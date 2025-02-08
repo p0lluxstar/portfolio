@@ -184,7 +184,6 @@ export const PROJECTS_DATA: IProjectData[] = [
     stack: ['Vite', 'TypeScript', 'React', 'HTML', 'SASS', 'PostgreSQL'],
     links: {
       github: 'https://github.com/p0lluxstar/graphiql-app',
-      sait: 'https://startling-cassata-9de4ea.netlify.app/',
     },
   },
   {
@@ -198,7 +197,6 @@ export const PROJECTS_DATA: IProjectData[] = [
     stack: ['Vite', 'TypeScript', 'React', 'HTML', 'SASS', 'PostgreSQL'],
     links: {
       github: 'https://github.com/p0lluxstar/graphiql-app',
-      sait: 'https://startling-cassata-9de4ea.netlify.app/',
     },
   },
 ];

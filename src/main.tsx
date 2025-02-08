@@ -7,7 +7,6 @@ const Root = (): JSX.Element => {
   const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
-    // Устанавливаем класс на <html>
     const rootElement = document.body;
     rootElement.classList.remove('light', 'dark');
     rootElement.classList.add(theme);

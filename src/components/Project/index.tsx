@@ -33,24 +33,28 @@ export default function ProjectTest({ props }: ProjectProps): JSX.Element {
             ))}
           </ul>
           <div className={styles.linkWrapper}>
-            <a
-              href={props.links.github}
-              aria-label="source code"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${styles.link} ${styles.linkIcon}`}
-            >
-              <i aria-hidden="true" className="fa fa-github"></i>
-            </a>
-            <a
-              href={props.links.sait}
-              aria-label="live preview"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${styles.link} ${styles.linkIcon}`}
-            >
-              <i aria-hidden="true" className="fa fa fa-external-link"></i>
-            </a>
+            {props.links.github && (
+              <a
+                href={props.links.github}
+                aria-label="source code"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.link} ${styles.linkIcon}`}
+              >
+                <i aria-hidden="true" className="fa fa-github"></i>
+              </a>
+            )}
+            {props.links.sait && (
+              <a
+                href={props.links.sait}
+                aria-label="live preview"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.link} ${styles.linkIcon}`}
+              >
+                <i aria-hidden="true" className="fa fa fa-external-link"></i>
+              </a>
+            )}
           </div>
         </div>
         <div className={styles.btnWrapper}>

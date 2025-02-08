@@ -5,7 +5,7 @@ export interface IProjectData {
   description: { en: string; ru: string };
   stack: string[];
   links: {
-    github: string;
-    sait: string;
+    github?: string;
+    sait?: string;
   };
 }
