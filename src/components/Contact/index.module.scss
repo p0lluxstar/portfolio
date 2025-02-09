@@ -20,3 +20,7 @@
 .btnOutline {
   @include mixins.btnOutline;
 }
+
+.underlineTitle{
+  @include mixins.underlineTitle;
+}

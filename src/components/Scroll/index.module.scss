@@ -1,12 +1,14 @@
+@use '../../styles/media' as media;
+
 .scrollTop {
   position: fixed;
   bottom: 1em;
-  right: 2em;
+  right: 1em;
   background-color: transparent;
   font-size: 1.8rem;
   transition: transform 0.2s ease-in-out;
 
-  &:hover{
+  &:hover {
     opacity: 0.8;
   }
 }

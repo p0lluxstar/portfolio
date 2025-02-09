@@ -35,6 +35,10 @@
   .about .btnOutline {
     margin-right: 1em;
   }
+
+  .underlineTitle{
+    @include mixins.underlineTitle
+  }
 }
 
 .btn {

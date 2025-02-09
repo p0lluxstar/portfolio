@@ -134,7 +134,7 @@ export const PROJECTS_DATA: IProjectData[] = [
     stack: ['NextJS', 'TypeScript', 'React', 'HTML', 'SASS'],
     links: {
       github: 'https://github.com/p0lluxstar/virtual-keyboard',
-      sait: 'https://splendid-ganache-84f2fd.netlify.app/',
+      sait: 'https://comfy-figolla-ec13a7.netlify.app',
     },
   },
   {
@@ -142,7 +142,7 @@ export const PROJECTS_DATA: IProjectData[] = [
     name: { ru: 'Проект 8', en: 'Project 8' },
     imgSrc: 'assets/img/projects/project_8.jpg',
     description: {
-      ru: 'Инструмент для работы с API RESTful и GraphQL. Поддерживает отправку запросов и просмотр ответов. Разработан в команде.',
+      ru: 'Инструмент для работы с API RESTful и GraphQL с авторизацией. Поддерживает отправку запросов и просмотр ответов. Разработан в команде.',
       en: 'A tool for working with the RESTful API and GraphQL. Supports sending requests and viewing responses. Developed by a team.',
     },
     stack: [
@@ -153,6 +153,7 @@ export const PROJECTS_DATA: IProjectData[] = [
       'SASS',
       'GraphQL',
       'RestAPI',
+      'Firebase',
     ],
     links: {
       github: 'https://github.com/p0lluxstar/graphiql-app',

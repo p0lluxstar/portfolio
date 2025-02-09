@@ -22,7 +22,9 @@ body {
   line-height: 1.5;
   color: var(--clr-fg);
   // background: var(--clr-bg);
-  background: var(--bg) fixed top center;
+  background: var(--bg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 ::-moz-selection {
@@ -52,18 +54,6 @@ h2 {
   font-size: 2rem;
   position: relative;
   display: inline-block;
-}
-
-h2::after {
-  content: '';
-  position: absolute;
-  left: -4px;
-  bottom: 2px;
-  width: 100px;
-  height: 10px;
-  background-color: var(--clr-primary);
-  opacity: 0.6;
-  z-index: -1;
 }
 
 h3 {

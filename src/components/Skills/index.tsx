@@ -7,7 +7,10 @@ export default function Skills(): JSX.Element {
 
   return (
     <section className={`${styles.section} ${styles.center}`} id="skills">
-      <h2 className={styles.sectionTitle}>{t('skills')}</h2>
+      <h2 className={styles.sectionTitle}>
+        {' '}
+        <span className={styles.underlineTitle}>{t('skills')}</span>
+      </h2>
       <ul className={styles.skillsList}>
         {SKILLS.map((item) => (
           <li

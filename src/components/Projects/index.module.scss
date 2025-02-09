@@ -13,3 +13,7 @@
   grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
   grid-gap: 2em;
 }
+
+.underlineTitle{
+  @include mixins.underlineTitle;
+}

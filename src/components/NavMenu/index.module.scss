@@ -12,16 +12,16 @@
 
     .linkIcon {
       color: var(--clr-fg);
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
 
     .navList {
       margin-right: 1.5em;
       display: flex;
+      font-size: 20px;
 
       @include media.mobile {
         flex-direction: column;
-        padding: 1em 0;
         position: absolute;
         right: 0;
         top: 5em;
@@ -34,14 +34,17 @@
 
     .navListItem {
       margin-left: 1.5em;
+      text-align: right;
+      width: 100%;
       @include media.mobile {
         margin-left: 0;
+        font-size: 20px;
       }
     }
 
     .displayNavList {
       @include media.mobile {
-        width: 20%;
+        width: 100%;
       }
     }
 
@@ -52,7 +55,7 @@
 
   .btnIconWrapper {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
     @include media.mobile {
       gap: 16px;
@@ -61,5 +64,8 @@
 
   .link {
     @include mixins.link;
+    @include media.mobile {
+      padding-right: 20px;
+    }
   }
 }

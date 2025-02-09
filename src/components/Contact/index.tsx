@@ -10,13 +10,10 @@ export default function Contact(): JSX.Element {
       className={`${styles.section} ${styles.contact} ${styles.center}`}
       id="contact"
     >
-      <h2 className={styles.sectionTitle}>{t('contact')}</h2>
+      <h2 className={styles.sectionTitle}>
+        <span className={styles.underlineTitle}>{t('contact')}</span>
+      </h2>
       <ContactForm />
-      {/* <a href="mailto:rjshekhar.official@gmail.com">
-        <span className={`${styles.btn} ${styles.btnOutline} ${styles.center}`}>
-          Email me
-        </span>
-      </a> */}
     </section>
   );
 }

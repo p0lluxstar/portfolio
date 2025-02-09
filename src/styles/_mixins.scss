@@ -50,9 +50,9 @@
 
 @mixin btn {
   display: block;
-  padding: 0.8em 1.4em;
+  padding: 0.4em 1.2em 0.6em 1.2em;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
 }
@@ -87,11 +87,13 @@
 
 @mixin btnIcon($isActive: false) {
   padding: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: if($isActive, var(--clr-primary), null);
 
-  &:hover {
-    color: var(--clr-primary);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &:active {
@@ -99,5 +101,21 @@
   }
   @include media.mobile {
     font-size: 2rem;
+  }
+}
+
+@mixin underlineTitle {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    bottom: 4px;
+    width: 90px;
+    height: 10px;
+    background-color: var(--clr-primary);
+    opacity: 0.6;
+    z-index: -1;
   }
 }

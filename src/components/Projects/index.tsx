@@ -13,7 +13,9 @@ export default function Projects(): JSX.Element {
         className={`${styles.section} ${styles.projects} ${styles.center}`}
       >
         <div>
-          <h2 className={styles.sectionTitle}>{t('projects')}</h2>
+          <h2 className={styles.sectionTitle}>
+            <span className={styles.underlineTitle}>{t('projects')}</span>
+          </h2>
         </div>
         <div className={styles.projectsGrid}>
           {PROJECTS_DATA.map((item) => (

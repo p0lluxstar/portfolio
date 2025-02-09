@@ -28,3 +28,7 @@
     transform: translateY(-4px);
   }
 }
+
+.underlineTitle{
+  @include mixins.underlineTitle;
+}
