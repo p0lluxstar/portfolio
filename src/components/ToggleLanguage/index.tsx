@@ -3,9 +3,10 @@ import styles from './index.module.scss';
 
 export default function ToggleLanguage(): JSX.Element {
   const currentLanguage = i18n.language;
+  localStorage.setItem('lang', currentLanguage);
 
   const toggleLanguage = (): void => {
-    const newLanguage = currentLanguage === 'en' ? 'ru' : 'en';
+    const newLanguage = currentLanguage === 'ru' ? 'en' : 'ru';
     i18n.changeLanguage(newLanguage);
   };
 
