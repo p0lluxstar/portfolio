@@ -8,7 +8,7 @@ interface ProjectProps {
 
 export default function ProjectTest({ props }: ProjectProps): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
-  const getLangFromLS = localStorage.getItem('i18nextLng');
+  const getLangFromLS = localStorage.getItem('lang');
 
   return (
     <div className={styles.project}>

@@ -63,6 +63,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  background-color: inherit;
 
   &:hover {
     color: var(--clr-bg);
@@ -89,6 +90,7 @@
   padding: 0;
   font-size: 1.5rem;
   color: if($isActive, var(--clr-primary), null);
+  background-color: inherit;
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
@@ -115,7 +117,7 @@
     width: 90px;
     height: 10px;
     background-color: var(--clr-primary);
-    opacity: 0.6;
+    opacity: 0.5;
     z-index: -1;
   }
 }

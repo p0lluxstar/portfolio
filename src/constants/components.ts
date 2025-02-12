@@ -61,7 +61,7 @@ export const PROJECTS_DATA: IProjectData[] = [
     links: {
       github:
         'https://github.com/rolling-scopes-school/p0lluxstar-JSFEPRESCHOOL2022Q4/tree/plants-part3',
-      sait: 'https://silly-treacle-01171e.netlify.app/',
+      sait: 'https://sunny-melomakarona-097685.netlify.app/',
     },
   },
   {
