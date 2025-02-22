@@ -1,4 +1,5 @@
 @use '../../styles/mixins' as mixins;
+@use '../../styles/vars';
 
 .project {
   position: relative;
@@ -6,7 +7,7 @@
   height: 100%;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
-  border: 1px solid #ccc;
+  border: 1px solid var(--clr-border);
   overflow: hidden;
 }
 

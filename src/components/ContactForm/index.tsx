@@ -38,7 +38,7 @@ export default function ContactForm(): JSX.Element {
       })
       .catch(() => {
         setIsError(true);
-        setErrorMessage('Ошибка при отправке формы');
+        setErrorMessage(t('err-message'));
       })
       .finally(() => {
         setIsLoading(false);

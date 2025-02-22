@@ -14,5 +14,6 @@
   "submit": "submit",
   "eyn": "Enter your name",
   "eye": "Enter your email",
-  "eym": "Enter your message"
+  "eym": "Enter your message",
+  "err-message": "Error when submitting the form" 
 }

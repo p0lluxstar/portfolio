@@ -35,6 +35,91 @@ export const SKILLS = [
 
 export const PROJECTS_DATA: IProjectData[] = [
   {
+    id: 10,
+    name: { ru: 'Проект 10', en: 'Project 10' },
+    imgSrc: 'assets/img/projects/project_10.jpg',
+    description: {
+      ru: 'Full-stack приложение предназначенное для мониторинга и анализа динамики изменения цен на продовольственные товары.',
+      en: 'Pet is a project designed to monitor and analyze the dynamics of food prices.',
+    },
+    stack: [
+      'NextJS',
+      'NestJS',
+      'TypeScript',
+      'PostgreSQL',
+      'TypeORM',
+      'HTML',
+      'SASS',
+      'Docker',
+    ],
+    links: {
+      github: 'https://github.com/p0lluxstar/graphiql-app',
+      sait: 'http://45.156.26.189/',
+    },
+  },
+
+  {
+    id: 8,
+    name: { ru: 'Проект 8', en: 'Project 8' },
+    imgSrc: 'assets/img/projects/project_8.jpg',
+    description: {
+      ru: 'Инструмент для работы с API RESTful и GraphQL с авторизацией. Поддерживает отправку запросов и просмотр ответов. Разработан в команде.',
+      en: 'A tool for working with the RESTful API and GraphQL. Supports sending requests and viewing responses. Developed by a team.',
+    },
+    stack: [
+      'Vite',
+      'TypeScript',
+      'React',
+      'HTML',
+      'SASS',
+      'GraphQL',
+      'RestAPI',
+      'Firebase',
+    ],
+    links: {
+      github: 'https://github.com/p0lluxstar/graphiql-app',
+      sait: 'https://restfull-graphiql.netlify.app/',
+    },
+  },
+
+  {
+    id: 11,
+    name: { ru: 'Проект 11', en: 'Project 11' },
+    imgSrc: 'assets/img/projects/project_11.jpg',
+    description: {
+      ru: 'Full-stack приложение предназначенное для создания, редактирования и хранения заметок с возможностью авторизации.',
+      en: 'Pet is a project designed for creating, editing, and storing notes with user authorization.',
+    },
+    stack: [
+      'Vite',
+      'TypeScript',
+      'React',
+      'PostgreSQL',
+      'tRPC',
+      'Prisma',
+      'JWT',
+      'HTML',
+      'SASS',
+    ],
+    links: {
+      github: 'https://github.com/p0lluxstar/graphiql-app',
+    },
+  },
+  {
+    id: 7,
+    name: { ru: 'Проект 7', en: 'Project 7' },
+    imgSrc: 'assets/img/projects/project_7.jpg',
+    description: {
+      ru: 'Приложение с получением данных с сервера через API и выполнением рендеринга страниц на стороне сервера (SSR).',
+      en: 'An application that receives data from the server via the API and performs page rendering on the server side (SSR).',
+    },
+    stack: ['NextJS', 'TypeScript', 'React', 'HTML', 'SASS'],
+    links: {
+      github: 'https://github.com/p0lluxstar/virtual-keyboard',
+      sait: 'https://comfy-figolla-ec13a7.netlify.app',
+    },
+  },
+  {
     id: 1,
     name: { ru: 'Проект 1', en: 'Project 1' },
     imgSrc: 'assets/img/projects/project_1.jpg',
@@ -80,21 +165,6 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
-    id: 4,
-    name: { ru: 'Проект 4', en: 'Project 4' },
-    imgSrc: 'assets/img/projects/project_4.jpg',
-    description: {
-      ru: 'Тренажер для изучения css-селекторов с использованием анимации. Прототип тренажера - приложение CSS Diner.',
-      en: 'A simulator for learning css selectors using animation. The prototype of the simulator is the CSS Diner application.',
-    },
-    stack: ['TypeScript', 'WebPack', 'HTML', 'SASS'],
-    links: {
-      github:
-        'https://github.com/rolling-scopes-school/p0lluxstar-JSFE2023Q1/tree/rss-css-selectors',
-      sait: 'https://moonlit-malabi-94c89b.netlify.app/',
-    },
-  },
-  {
     id: 5,
     name: { ru: 'Проект 5', en: 'Project 5' },
     imgSrc: 'assets/img/projects/project_5.jpg',
@@ -110,6 +180,22 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
+    id: 4,
+    name: { ru: 'Проект 4', en: 'Project 4' },
+    imgSrc: 'assets/img/projects/project_4.jpg',
+    description: {
+      ru: 'Тренажер для изучения css-селекторов с использованием анимации. Прототип тренажера - приложение CSS Diner.',
+      en: 'A simulator for learning css selectors using animation. The prototype of the simulator is the CSS Diner application.',
+    },
+    stack: ['TypeScript', 'WebPack', 'HTML', 'SASS'],
+    links: {
+      github:
+        'https://github.com/rolling-scopes-school/p0lluxstar-JSFE2023Q1/tree/rss-css-selectors',
+      sait: 'https://moonlit-malabi-94c89b.netlify.app/',
+    },
+  },
+
+  {
     id: 6,
     name: { ru: 'Проект 6', en: 'Project 6' },
     imgSrc: 'assets/img/projects/project_6.jpg',
@@ -124,43 +210,6 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
-    id: 7,
-    name: { ru: 'Проект 7', en: 'Project 7' },
-    imgSrc: 'assets/img/projects/project_7.jpg',
-    description: {
-      ru: 'Приложение с получением данных с сервера через API и выполнением рендеринга страниц на стороне сервера (SSR).',
-      en: 'An application that receives data from the server via the API and performs page rendering on the server side (SSR).',
-    },
-    stack: ['NextJS', 'TypeScript', 'React', 'HTML', 'SASS'],
-    links: {
-      github: 'https://github.com/p0lluxstar/virtual-keyboard',
-      sait: 'https://comfy-figolla-ec13a7.netlify.app',
-    },
-  },
-  {
-    id: 8,
-    name: { ru: 'Проект 8', en: 'Project 8' },
-    imgSrc: 'assets/img/projects/project_8.jpg',
-    description: {
-      ru: 'Инструмент для работы с API RESTful и GraphQL с авторизацией. Поддерживает отправку запросов и просмотр ответов. Разработан в команде.',
-      en: 'A tool for working with the RESTful API and GraphQL. Supports sending requests and viewing responses. Developed by a team.',
-    },
-    stack: [
-      'Vite',
-      'TypeScript',
-      'React',
-      'HTML',
-      'SASS',
-      'GraphQL',
-      'RestAPI',
-      'Firebase',
-    ],
-    links: {
-      github: 'https://github.com/p0lluxstar/graphiql-app',
-      sait: 'https://restfull-graphiql.netlify.app/',
-    },
-  },
-  {
     id: 9,
     name: { ru: 'Проект 9', en: 'Project 9' },
     imgSrc: 'assets/img/projects/project_9.jpg',
@@ -172,32 +221,6 @@ export const PROJECTS_DATA: IProjectData[] = [
     links: {
       github: 'https://github.com/p0lluxstar/graphiql-app',
       sait: 'https://startling-cassata-9de4ea.netlify.app/',
-    },
-  },
-  {
-    id: 10,
-    name: { ru: 'Проект 10', en: 'Project 10' },
-    imgSrc: 'assets/img/projects/project_10.jpg',
-    description: {
-      ru: 'Pet-проект, предназначенный для мониторинга и анализа динамики изменения цен на продовольственные товары.',
-      en: 'Pet is a project designed to monitor and analyze the dynamics of food prices.',
-    },
-    stack: ['Vite', 'TypeScript', 'React', 'HTML', 'SASS', 'PostgreSQL'],
-    links: {
-      github: 'https://github.com/p0lluxstar/graphiql-app',
-    },
-  },
-  {
-    id: 11,
-    name: { ru: 'Проект 11', en: 'Project 11' },
-    imgSrc: 'assets/img/projects/project_11.jpg',
-    description: {
-      ru: 'Pet-проект, предназначенный для создания, редактирования и хранения заметок c авторизацией пользователей.',
-      en: 'Pet is a project designed for creating, editing, and storing notes with user authorization.',
-    },
-    stack: ['Vite', 'TypeScript', 'React', 'HTML', 'SASS', 'PostgreSQL'],
-    links: {
-      github: 'https://github.com/p0lluxstar/graphiql-app',
     },
   },
 ];
