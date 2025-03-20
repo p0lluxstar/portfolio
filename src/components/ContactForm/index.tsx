@@ -54,16 +54,16 @@ export default function ContactForm(): JSX.Element {
         className={styles.contacForm}
       >
         <div className={styles.contactFormField}>
-          <label className={styles.contactFormLabel} htmlFor="name">
-            {t('name')}
+          <label className={styles.contactFormLabel} htmlFor="subjectMessage">
+            {t('subjectMessage')}
           </label>
           <input
             required
-            placeholder={t('eyn')}
+            placeholder={t('esm')}
             type="text"
             className={styles.contactFormInput}
-            name="name"
-            id="name"
+            name="subjectMessage"
+            id="subjectMessage"
           />
         </div>
         <div className={styles.contactFormField}>

@@ -8,10 +8,10 @@ export default function Contact(): JSX.Element {
   return (
     <section
       className={`${styles.section} ${styles.contact} ${styles.center}`}
-      id="contact"
+      id="contacts"
     >
       <h2 className={styles.sectionTitle}>
-        <span className={styles.underlineTitle}>{t('contact')}</span>
+        <span className={styles.underlineTitle}>{t('contacts')}</span>
       </h2>
       <ContactForm />
     </section>

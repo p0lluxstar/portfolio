@@ -2,7 +2,7 @@ import { IProjectData } from '../types/interfaces';
 
 export const URL_GITHUB = 'https://github.com/p0lluxstar';
 
-export const NAV_LIST_ITEM = ['projects', 'skills', 'contact'];
+export const NAV_LIST_ITEM = ['projects', 'skills', 'contacts'];
 
 export const SKILLS = [
   'JavaScript',
@@ -54,10 +54,9 @@ export const PROJECTS_DATA: IProjectData[] = [
     ],
     links: {
       github: 'https://github.com/p0lluxstar/pd',
-      sait: 'http://45.156.26.189/',
+      sait: 'http://45.156.26.189:3000/',
     },
   },
-
   {
     id: 2,
     name: { ru: 'Проект 2', en: 'Project 2' },
@@ -81,28 +80,26 @@ export const PROJECTS_DATA: IProjectData[] = [
       sait: 'https://restfull-graphiql.netlify.app/',
     },
   },
-
   {
     id: 3,
     name: { ru: 'Проект 3', en: 'Project 3' },
     imgSrc: 'assets/img/projects/project_3.jpg',
     description: {
-      ru: 'Full-stack приложение предназначенное для создания, редактирования и хранения заметок с возможностью авторизации. Приложение в стадии разработки.',
-      en: 'A full-stack application designed for creating, editing and storing notes with the possibility of authorization. The application is under development.',
+      ru: 'Full-stack приложение предназначенное для мониторинга температуры и влажности в помещении с использованием датчика (DHT11/DHT22) и микроконтроллера ESP32.',
+      en: 'A full-stack application designed to monitor indoor temperature and humidity using a sensor (DHT11/DHT22) and an ESP32 microcontroller.',
     },
     stack: [
-      'Vite',
-      'TypeScript',
-      'React',
-      'PostgreSQL',
-      'tRPC',
-      'Prisma',
-      'JWT',
+      'Python',
+      'Django',
+      'JavaScript',
+      'SQLite',
+      'Docker',
       'HTML',
-      'SASS',
+      'CSS',
     ],
     links: {
-      github: 'https://github.com/p0lluxstar/ideaN',
+      github: 'https://github.com/p0lluxstar/climate-control',
+      sait: 'http://45.156.26.189:8000/',
     },
   },
   {
@@ -125,6 +122,29 @@ export const PROJECTS_DATA: IProjectData[] = [
     name: { ru: 'Проект 5', en: 'Project 5' },
     imgSrc: 'assets/img/projects/project_5.jpg',
     description: {
+      ru: 'Full-stack приложение предназначенное для создания, редактирования и хранения заметок с возможностью авторизации. Приложение в стадии разработки.',
+      en: 'A full-stack application designed for creating, editing and storing notes with the possibility of authorization. The application is under development.',
+    },
+    stack: [
+      'Vite',
+      'TypeScript',
+      'React',
+      'PostgreSQL',
+      'tRPC',
+      'Prisma',
+      'JWT',
+      'HTML',
+      'SASS',
+    ],
+    links: {
+      github: 'https://github.com/p0lluxstar/ideaN',
+    },
+  },
+  {
+    id: 6,
+    name: { ru: 'Проект 6', en: 'Project 6' },
+    imgSrc: 'assets/img/projects/project_6.jpg',
+    description: {
       ru: 'Одностраничное приложение со встроенным слайдером изображений и виджатами погоды, аудиоплеера, блока цитат дня, настройками и списком задач.',
       en: 'A single-page application with a built-in image slider and weather widgets, an audio player, a block of quotes of the day, settings and a list of tasks.',
     },
@@ -136,9 +156,9 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
-    id: 6,
-    name: { ru: 'Проект 6', en: 'Project 6' },
-    imgSrc: 'assets/img/projects/project_6.jpg',
+    id: 7,
+    name: { ru: 'Проект 7', en: 'Project 7' },
+    imgSrc: 'assets/img/projects/project_7.jpg',
     description: {
       ru: 'Адаптивный и интерактивный лендинг сайт. Стили и графика оформлены по макету из Figma.',
       en: 'Adaptive and interactive landing site. Styles and graphics are designed according to the Figma layout.',
@@ -151,9 +171,9 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
-    id: 7,
-    name: { ru: 'Проект 7', en: 'Project 7' },
-    imgSrc: 'assets/img/projects/project_7.jpg',
+    id: 8,
+    name: { ru: 'Проект 8', en: 'Project 8' },
+    imgSrc: 'assets/img/projects/project_8.jpg',
     description: {
       ru: 'Адаптивный и интерактивный двух страничный сайт со слайдером и пагинацией. Стили и графика оформлены по макету из Figma.',
       en: 'Adaptive and interactive two-page website with slider and pagination. Styles and graphics are designed according to the Figma layout.',
@@ -166,9 +186,9 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
-    id: 8,
-    name: { ru: 'Проект 8', en: 'Project 8' },
-    imgSrc: 'assets/img/projects/project_8.jpg',
+    id: 9,
+    name: { ru: 'Проект 9', en: 'Project 9' },
+    imgSrc: 'assets/img/projects/project_9.jpg',
     description: {
       ru: 'Классическая игра - Сапер. Игра включает звуковые эффекты, уровень сложности, смену темы и сохранение результатов в таблицу.',
       en: 'A classic Minesweeper game. The game includes sound effects, difficulty level, theme change, and saving the results to a spreadsheet.',
@@ -181,9 +201,9 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
-    id: 9,
-    name: { ru: 'Проект 9', en: 'Project 9' },
-    imgSrc: 'assets/img/projects/project_9.jpg',
+    id: 10,
+    name: { ru: 'Проект 10', en: 'Project 10' },
+    imgSrc: 'assets/img/projects/project_10.jpg',
     description: {
       ru: 'Тренажер для изучения css-селекторов с использованием анимации. Прототип тренажера - приложение CSS Diner.',
       en: 'A simulator for learning css selectors using animation. The prototype of the simulator is the CSS Diner application.',
@@ -197,9 +217,9 @@ export const PROJECTS_DATA: IProjectData[] = [
   },
 
   {
-    id: 10,
-    name: { ru: 'Проект 10', en: 'Project 10' },
-    imgSrc: 'assets/img/projects/project_10.jpg',
+    id: 11,
+    name: { ru: 'Проект 11', en: 'Project 11' },
+    imgSrc: 'assets/img/projects/project_11.jpg',
     description: {
       ru: 'Виртуальная клавиатура с возможностью переключаться между двумя языковыми раскладками.',
       en: 'A virtual keyboard with the ability to switch between two language layouts.',
@@ -211,17 +231,17 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
-    id: 11,
-    name: { ru: 'Проект 11', en: 'Project 11' },
-    imgSrc: 'assets/img/projects/project_11.jpg',
+    id: 12,
+    name: { ru: 'Проект 12', en: 'Project 12' },
+    imgSrc: 'assets/img/projects/project_12.jpg',
     description: {
       ru: 'Формы с управляемыми и неуправляемыми элементами, включающая валидацию вводимых данных для обеспечения корректности и удобства использования.',
       en: 'Forms with managed and unmanaged elements, including validation of input data to ensure correctness and ease of use.',
     },
-    stack: ['Vite', 'TypeScript', 'React', 'Redux', 'HTML', 'SASS'],
+    stack: ['Vite', 'TypeScript', 'React', 'Redux', 'Yup', 'HTML', 'SASS'],
     links: {
       github: 'https://github.com/p0lluxstar/RSS-React/tree/react-forms',
-      sait: 'https://startling-cassata-9de4ea.netlify.app/',
+      sait: 'https://lucent-baklava-7661a1.netlify.app/',
     },
   },
 ];
