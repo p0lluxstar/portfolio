@@ -39,8 +39,8 @@ export const PROJECTS_DATA: IProjectData[] = [
     name: { ru: 'Проект 1', en: 'Project 1' },
     imgSrc: 'assets/img/projects/project_1.jpg',
     description: {
-      ru: 'Full-stack приложение предназначенное для мониторинга и анализа динамики изменения цен на продовольственные товары. Приложение в стадии разработки.',
-      en: 'A full-stack application designed to monitor and analyze the dynamics of food prices. The application is under development.',
+      ru: 'Full-stack приложение c использование веб-скрапинга для мониторинг и анализа динамики изменения цен на товары. Приложение в стадии разработки.',
+      en: 'Full-stack application with the use of web scraping to monitor and analyze the dynamics of changes in prices for goods. The application is under development.',
     },
     stack: [
       'NextJS',
@@ -48,9 +48,9 @@ export const PROJECTS_DATA: IProjectData[] = [
       'TypeScript',
       'PostgreSQL',
       'TypeORM',
+      'Puppeteer',
       'HTML',
       'SASS',
-      'Docker',
     ],
     links: {
       github: 'https://github.com/p0lluxstar/pd',
@@ -62,8 +62,33 @@ export const PROJECTS_DATA: IProjectData[] = [
     name: { ru: 'Проект 2', en: 'Project 2' },
     imgSrc: 'assets/img/projects/project_2.jpg',
     description: {
-      ru: 'Инструмент для работы с API RESTful и GraphQL с авторизацией. Поддерживает отправку запросов и просмотр ответов. Разработан в команде.',
-      en: 'A tool for working with the RESTful API and GraphQL. Supports sending requests and viewing responses. Developed by a team.',
+      ru: 'Full-Stack приложение для обмена сообщениями в реальном времени с регистрацией. Приложение в стадии разработки.',
+      en: 'A full-stack application for real-time messaging with registration. The application is under development.',
+    },
+    stack: [
+      'Vite',
+      'NestJS',
+      'TypeScript',
+      'Vue',
+      'PostgreSQL',
+      'Prisma',
+      'WebSocket',
+      'JWT',
+      'SASS',
+      'Docker',
+    ],
+    links: {
+      github: 'https://github.com/p0lluxstar/piblchat',
+      sait: 'http://45.156.26.189:8080/',
+    },
+  },
+  {
+    id: 3,
+    name: { ru: 'Проект 3', en: 'Project 3' },
+    imgSrc: 'assets/img/projects/project_3.jpg',
+    description: {
+      ru: 'Инструмент для работы с API RESTful и GraphQL с регистрацией. Поддерживает отправку запросов и просмотр ответов. Разработан в команде.',
+      en: 'A tool for working with the RESTful API and GraphQL with registration. Supports sending requests and viewing responses. Developed by a team.',
     },
     stack: [
       'Vite',
@@ -78,28 +103,6 @@ export const PROJECTS_DATA: IProjectData[] = [
     links: {
       github: 'https://github.com/p0lluxstar/graphiql-app',
       sait: 'https://restfull-graphiql.netlify.app/',
-    },
-  },
-  {
-    id: 3,
-    name: { ru: 'Проект 3', en: 'Project 3' },
-    imgSrc: 'assets/img/projects/project_3.jpg',
-    description: {
-      ru: 'Full-stack приложение предназначенное для мониторинга температуры и влажности в помещении с использованием датчика (DHT11/DHT22) и микроконтроллера ESP32.',
-      en: 'A full-stack application designed to monitor indoor temperature and humidity using a sensor (DHT11/DHT22) and an ESP32 microcontroller.',
-    },
-    stack: [
-      'Python',
-      'Django',
-      'JavaScript',
-      'SQLite',
-      'Docker',
-      'HTML',
-      'CSS',
-    ],
-    links: {
-      github: 'https://github.com/p0lluxstar/climate-control',
-      sait: 'http://45.156.26.189:8000/',
     },
   },
   {
@@ -122,24 +125,24 @@ export const PROJECTS_DATA: IProjectData[] = [
     name: { ru: 'Проект 5', en: 'Project 5' },
     imgSrc: 'assets/img/projects/project_5.jpg',
     description: {
-      ru: 'Full-stack приложение предназначенное для создания, редактирования и хранения заметок с возможностью авторизации. Приложение в стадии разработки.',
-      en: 'A full-stack application designed for creating, editing and storing notes with the possibility of authorization. The application is under development.',
+      ru: 'Full-stack приложение для мониторинга температуры и влажности в помещении с использованием датчика (DHT11/DHT22) и микроконтроллера ESP32.',
+      en: 'A full-stack application designed to monitor indoor temperature and humidity using a sensor (DHT11/DHT22) and an ESP32 microcontroller.',
     },
     stack: [
-      'Vite',
-      'TypeScript',
-      'React',
-      'PostgreSQL',
-      'tRPC',
-      'Prisma',
-      'JWT',
+      'Python',
+      'Django',
+      'JavaScript',
+      'SQLite',
+      'Docker',
       'HTML',
-      'SASS',
+      'CSS',
     ],
     links: {
-      github: 'https://github.com/p0lluxstar/ideaN',
+      github: 'https://github.com/p0lluxstar/climate-control',
+      sait: 'http://45.156.26.189:8000/',
     },
   },
+
   {
     id: 6,
     name: { ru: 'Проект 6', en: 'Project 6' },
@@ -160,29 +163,27 @@ export const PROJECTS_DATA: IProjectData[] = [
     name: { ru: 'Проект 7', en: 'Project 7' },
     imgSrc: 'assets/img/projects/project_7.jpg',
     description: {
-      ru: 'Адаптивный и интерактивный лендинг сайт. Стили и графика оформлены по макету из Figma.',
-      en: 'Adaptive and interactive landing site. Styles and graphics are designed according to the Figma layout.',
+      ru: 'REST API сервис для управления обращениями пользователей. Только backend часть.',
+      en: 'The REST API is a service for managing user requests. Only the backend part.',
     },
-    stack: ['JavaScript', 'HTML', 'CSS'],
+    stack: ['Node.js', 'TypeScript', 'Express', 'SQLite', 'Prisma'],
     links: {
-      github:
-        'https://github.com/rolling-scopes-school/p0lluxstar-JSFEPRESCHOOL2022Q4/tree/plants-part3',
-      sait: 'https://sunny-melomakarona-097685.netlify.app/',
+      github: 'https://github.com/p0lluxstar/request-processing-system',
     },
   },
+
   {
     id: 8,
     name: { ru: 'Проект 8', en: 'Project 8' },
     imgSrc: 'assets/img/projects/project_8.jpg',
     description: {
-      ru: 'Адаптивный и интерактивный двух страничный сайт со слайдером и пагинацией. Стили и графика оформлены по макету из Figma.',
-      en: 'Adaptive and interactive two-page website with slider and pagination. Styles and graphics are designed according to the Figma layout.',
+      ru: 'Пошаговая игра - Рогалик. Без использования сторонних фреймворков и библиотек.',
+      en: 'A turn-based roguelike game. Without using third-party frameworks and libraries.',
     },
-    stack: ['JavaScript', 'HTML', 'SASS'],
+    stack: ['JavaScript', 'HTML', 'CSS'],
     links: {
-      github:
-        'https://github.com/rolling-scopes-school/p0lluxstar-JSFE2023Q1/tree/shelter-part2',
-      sait: 'https://jazzy-centaur-243c73.netlify.app/',
+      github: 'https://github.com/p0lluxstar/roguelike',
+      sait: 'https://stirring-profiterole-9232aa.netlify.app/',
     },
   },
   {
@@ -205,29 +206,29 @@ export const PROJECTS_DATA: IProjectData[] = [
     name: { ru: 'Проект 10', en: 'Project 10' },
     imgSrc: 'assets/img/projects/project_10.jpg',
     description: {
-      ru: 'Тренажер для изучения css-селекторов с использованием анимации. Прототип тренажера - приложение CSS Diner.',
-      en: 'A simulator for learning css selectors using animation. The prototype of the simulator is the CSS Diner application.',
+      ru: 'Адаптивный и интерактивный лендинг сайт. Стили и графика оформлены по макету из Figma.',
+      en: 'Adaptive and interactive landing site. Styles and graphics are designed according to the Figma layout.',
     },
-    stack: ['TypeScript', 'WebPack', 'HTML', 'SASS'],
+    stack: ['JavaScript', 'HTML', 'CSS'],
     links: {
       github:
-        'https://github.com/rolling-scopes-school/p0lluxstar-JSFE2023Q1/tree/rss-css-selectors',
-      sait: 'https://moonlit-malabi-94c89b.netlify.app/',
+        'https://github.com/rolling-scopes-school/p0lluxstar-JSFEPRESCHOOL2022Q4/tree/plants-part3',
+      sait: 'https://sunny-melomakarona-097685.netlify.app/',
     },
   },
-
   {
-    id: 11,
+    id: 8,
     name: { ru: 'Проект 11', en: 'Project 11' },
     imgSrc: 'assets/img/projects/project_11.jpg',
     description: {
-      ru: 'Виртуальная клавиатура с возможностью переключаться между двумя языковыми раскладками.',
-      en: 'A virtual keyboard with the ability to switch between two language layouts.',
+      ru: 'Адаптивный и интерактивный двух страничный сайт со слайдером и пагинацией. Стили и графика оформлены по макету из Figma.',
+      en: 'Adaptive and interactive two-page website with slider and pagination. Styles and graphics are designed according to the Figma layout.',
     },
     stack: ['JavaScript', 'HTML', 'SASS'],
     links: {
-      github: 'https://github.com/p0lluxstar/virtual-keyboard',
-      sait: 'https://splendid-ganache-84f2fd.netlify.app/',
+      github:
+        'https://github.com/rolling-scopes-school/p0lluxstar-JSFE2023Q1/tree/shelter-part2',
+      sait: 'https://jazzy-centaur-243c73.netlify.app/',
     },
   },
   {
