@@ -69,10 +69,13 @@
 }
 
 .detailsData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: none;
   color: #fff;
   width: 90%;
-  padding: 10px;
+  padding: 15px 10px 10px;
   container-type: inline-size;
 }
 
@@ -81,6 +84,10 @@
   margin-bottom: 6px;
   font-size: 14px;
   font-size: 5cqw;
+}
+
+.projectStack {
+  padding-bottom: 10px;
 }
 
 .projectTitle {
@@ -94,9 +101,7 @@
 
 .linkWrapper {
   display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 10px;
+  justify-content: left;
   gap: 10px;
   background: none;
 }

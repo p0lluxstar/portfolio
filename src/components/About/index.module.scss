@@ -9,16 +9,21 @@
   flex-direction: column;
   margin-top: 3em;
 
+  .aboutNameTitle {
+    text-align: center;
+  }
+
   .aboutName {
     color: var(--clr-primary);
   }
 
   .aboutRole {
     margin-top: 1.2em;
+    text-align: center;
   }
 
   .aboutDesc {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     max-width: 600px;
   }

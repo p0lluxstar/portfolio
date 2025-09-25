@@ -9,14 +9,16 @@ export default function About(): JSX.Element {
   return (
     <div className={`${styles.about} ${styles.center}`}>
       <div>
-        <h1>
+        <h1 className={styles.aboutNameTitle}>
           {t('greeting')}
           <span className={styles.aboutName}> {t('fullName')}</span>
         </h1>
       </div>
       <h2 className={styles.aboutRole}>
-        <span className={styles.underlineTitle}>{arrWord[0]}</span>{' '}
-        {arrWord.slice(1).join(' ')}
+        <span className={styles.underlineTitle}>
+          {arrWord[0].toUpperCase()}
+        </span>{' '}
+        {arrWord.slice(1).join(' ').toUpperCase()}
       </h2>
       <p className={styles.aboutDesc}>{t('aboutMe')}</p>
       <div className={`${styles.aboutContact} ${styles.center}`}>
