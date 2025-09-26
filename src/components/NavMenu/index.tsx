@@ -20,7 +20,7 @@ export default function NavMenu(): JSX.Element {
             <li className={styles.navListItem} key={item}>
               <a
                 className={`${styles.link} ${styles.navLink}`}
-                href={`#${item}`}
+                href={item != 'resume' ? `#${item}` : 'assets/docs/resume.pdf'}
               >
                 {t(`${item}`)}
               </a>

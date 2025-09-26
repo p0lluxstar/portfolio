@@ -23,10 +23,10 @@ export default function About(): JSX.Element {
       <p className={styles.aboutDesc}>{t('aboutMe')}</p>
       <div className={`${styles.aboutContact} ${styles.center}`}>
         <button
-          onClick={() => window.open('assets/docs/resume.pdf', '_blank')}
+          onClick={() => window.open('assets/docs/resume.pdf', '_self')}
           className={`${styles.btn} ${styles.btnOutline}`}
         >
-          {t('rezume')}
+          {t('resume')}
         </button>
       </div>
     </div>

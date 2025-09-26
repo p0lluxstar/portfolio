@@ -2,7 +2,7 @@ import { IProjectData } from '../types/interfaces';
 
 export const URL_GITHUB = 'https://github.com/p0lluxstar';
 
-export const NAV_LIST_ITEM = ['projects', 'skills', 'contacts'];
+export const NAV_LIST_ITEM = ['projects', 'skills', 'contacts', 'resume'];
 
 export const SKILLS = [
   'JavaScript',
@@ -11,9 +11,10 @@ export const SKILLS = [
   'CSS',
   'SCSS',
   'React',
+  'Vue',
   'Redux',
   'Git',
-  'Material UI',
+  'Tailwind',
   'Jest',
   'NextJS',
   'Vite',

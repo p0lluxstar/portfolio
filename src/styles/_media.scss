@@ -1,7 +1,14 @@
-$mobile: 600px;
+$mobile: 640px;
+$mobile700: 700px;
 
 @mixin mobile {
   @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin mobile700 {
+  @media (max-width: #{$mobile700}) {
     @content;
   }
 }

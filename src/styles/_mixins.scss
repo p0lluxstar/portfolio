@@ -43,6 +43,14 @@
     transition: width 0.2s ease-in;
   }
 
+  @include media.mobile700 {
+    padding: 0;
+
+    &::before {
+      height: 0em;
+    }
+  }
+
   &:hover::before {
     width: 100%;
   }
@@ -99,8 +107,9 @@
   }
 
   &:active {
-    transform: translateY(-5px);
+    transform: translateY(2px);
   }
+  
   @include media.mobile {
     font-size: 2rem;
   }

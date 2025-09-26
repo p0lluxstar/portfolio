@@ -24,7 +24,7 @@ export default function NavHamburger({
     >
       <i
         aria-hidden="true"
-        className={isOpen ? 'fa fa-times' : 'fa fa-bars'}
+        className={isOpen ? 'fa fa-window-close' : 'fa fa-bars'}
       ></i>
     </button>
   );

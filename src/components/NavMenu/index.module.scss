@@ -24,7 +24,7 @@
         flex-direction: column;
         position: absolute;
         right: 0;
-        top: 5em;
+        top: 4.4em;
         width: 0;
         overflow: hidden;
         transition: width 0.2s ease-in-out;
@@ -36,6 +36,15 @@
       margin-left: 1.5em;
       text-align: right;
       width: 100%;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+
+      @include media.mobile700 {
+        margin-left: 1em;
+      }
+
       @include media.mobile {
         margin-left: 0;
         font-size: 20px;
