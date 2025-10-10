@@ -21,6 +21,7 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           source: "."
           target: ${{ secrets.SERVER_PATH }}
+          overwrite: true
 
       - name: SSH to server and rebuild Docker
         uses: appleboy/ssh-action@v1.0.3
