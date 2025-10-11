@@ -1,5 +1,5 @@
 name: Deploy to Docker Server
-run-name: "🚀 Deploy: ${{ github.event.head_commit.message }}"
+run-name: "🚀 Deploy: ${{ github.event.head_commit.message || 'Manual run' }}"
 
 on:
   push:
@@ -11,15 +11,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Клонируем код из репозитория
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Start ssh-agent and add key
+      # 2️⃣ Запускаем ssh-agent и добавляем ключ с паролем
+      - name: Start SSH agent and add private key
         uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.DEPLOY_KEY }}
           passphrase: ${{ secrets.DEPLOY_KEY_PASSPHRASE }}
 
+      # 3️⃣ Копируем код на сервер
       - name: Copy code to server
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -29,6 +32,7 @@ jobs:
           target: ${{ secrets.SERVER_PATH }}
           overwrite: true
 
+      # 4️⃣ Выполняем команды на сервере: пересобираем Docker
       - name: SSH to server and rebuild Docker
         uses: appleboy/ssh-action@v1.0.3
         with:
@@ -36,6 +40,10 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           script: |
             cd ${{ secrets.SERVER_PATH }}
-            docker compose down
+            echo "Stopping containers..."
+            docker compose down || true
+            echo "Rebuilding images..."
             docker compose build --no-cache
+            echo "Starting containers..."
             docker compose up -d
+            echo "✅ Deploy complete!"
