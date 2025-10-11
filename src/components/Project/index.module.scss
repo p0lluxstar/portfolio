@@ -108,11 +108,14 @@
 
 .link {
   @include mixins.link;
-  padding: 0px;
 
   i {
     text-align: center;
     font-size: 8cqw;
+  }
+
+  & {
+    padding: 0px;
   }
 }
 

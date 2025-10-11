@@ -1,6 +1,5 @@
 :root {
   --clr-black: #000;
-
   --clr-light-gray: #999;
   --clr-dark-gray: #333;
   --clr-input-focus: #e8f0fe;
@@ -16,6 +15,7 @@
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --bg: #fcfcfc;
   --clr-border: #ccc;
+  --clr-placeholder: #999;
 }
 
 .dark {
@@ -30,4 +30,5 @@
   --bg: #23283e;
   --clr-border: #62627e;
   --clr-gray: #bdbddd;
+  --clr-placeholder: #777;
 }

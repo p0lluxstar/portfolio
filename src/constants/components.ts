@@ -207,7 +207,6 @@ export const PROJECTS_DATA: IProjectData[] = [
       sait: 'https://roguelike-p0lluxstar.netlify.app/',
     },
   },
-
   {
     id: 11,
     name: { ru: 'Проект 11', en: 'Project 11' },
