@@ -33,6 +33,10 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
-          script: |
-            cd ${{ secrets.SERVER_PATH }}
-            bash deploy-portfolio.sh
+          script: |                              # Многострочный блок с командами
+            echo "Triggering secure deploy..."
+            ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}
+         # Этот шаг подключается к серверу через SSH и выполняет указанные команды.
+         # Параметр "-o StrictHostKeyChecking=no" отключает проверку "доверенного хоста",
+         # чтобы GitHub Actions не запрашивал подтверждение при первом подключении.
+         # Обычно здесь запускают деплой-скрипт (например, обновление Docker, git pull, npm build и т.д.)
