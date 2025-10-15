@@ -11,32 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Клонируем код
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      # 2️⃣ Копируем код на сервер
-      - name: Copy code to server
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.DEPLOY_KEY }}
-          source: "."
-          target: ${{ secrets.SERVER_PATH }}
-          overwrite: true
-
-      # 3️⃣ Подключаемся к серверу и запускаем деплой скрипт
-      - name: SSH to server and run deploy script
+      - name: Trigger SSH connection to start deploy
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
-          script: |                              # Многострочный блок с командами
-            echo "Triggering secure deploy..."
-            ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}
-         # Этот шаг подключается к серверу через SSH и выполняет указанные команды.
-         # Параметр "-o StrictHostKeyChecking=no" отключает проверку "доверенного хоста",
-         # чтобы GitHub Actions не запрашивал подтверждение при первом подключении.
-         # Обычно здесь запускают деплой-скрипт (например, обновление Docker, git pull, npm build и т.д.)
+          script: |
+            echo "Connecting to server... deploy should start automatically"
