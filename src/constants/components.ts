@@ -179,32 +179,16 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
-    id: 6,
-    name: { ru: 'Проект 6', en: 'Project 6' },
-    imgSrc: 'assets/img/projects/project_6.jpg',
+    id: 14,
+    name: { ru: 'Проект 14', en: 'Project 14' },
+    imgSrc: 'assets/img/projects/project_14.jpg',
     description: {
-      ru: 'Интерактивное веб-приложение, объединяющая аудиоплеер, виджеты погоды, организатор задач и слайдер изображений.',
-      en: 'An interactive web application that combines an audio player, weather widgets, a task organizer, and an image slider.',
+      ru: 'Парсер для сайта vprok.ru, который извлекает и сохраняет в файл информацию о товарах.',
+      en: 'A parser for the website vprok.ru , which extracts and saves information about products to a file.',
     },
-    stack: ['JavaScript', 'HTML', 'CSS'],
+    stack: ['Node.js', 'Puppeteer'],
     links: {
-      github:
-        'https://github.com/rolling-scopes-school/p0lluxstar-JSFEPRESCHOOL2022Q4/tree/momentum',
-      sait: 'https://momentum-p0lluxstar.netlify.app/',
-    },
-  },
-  {
-    id: 8,
-    name: { ru: 'Проект 8', en: 'Project 8' },
-    imgSrc: 'assets/img/projects/project_8.jpg',
-    description: {
-      ru: 'Пошаговая игра - Рогалик. Без использования сторонних фреймворков и библиотек.',
-      en: 'A turn-based roguelike game. Without using third-party frameworks and libraries.',
-    },
-    stack: ['JavaScript', 'HTML', 'CSS'],
-    links: {
-      github: 'https://github.com/p0lluxstar/roguelike',
-      sait: 'https://roguelike-p0lluxstar.netlify.app/',
+      github: 'https://github.com/p0lluxstar/parser-vprok',
     },
   },
   {
@@ -223,6 +207,20 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
+    id: 8,
+    name: { ru: 'Проект 8', en: 'Project 8' },
+    imgSrc: 'assets/img/projects/project_8.jpg',
+    description: {
+      ru: 'Пошаговая игра - Рогалик. Без использования сторонних фреймворков и библиотек.',
+      en: 'A turn-based roguelike game. Without using third-party frameworks and libraries.',
+    },
+    stack: ['JavaScript', 'HTML', 'CSS'],
+    links: {
+      github: 'https://github.com/p0lluxstar/roguelike',
+      sait: 'https://roguelike-p0lluxstar.netlify.app/',
+    },
+  },
+  {
     id: 9,
     name: { ru: 'Проект 9', en: 'Project 9' },
     imgSrc: 'assets/img/projects/project_9.jpg',
@@ -238,17 +236,32 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
-    id: 12,
-    name: { ru: 'Проект 12', en: 'Project 12' },
-    imgSrc: 'assets/img/projects/project_12.jpg',
+    id: 6,
+    name: { ru: 'Проект 6', en: 'Project 6' },
+    imgSrc: 'assets/img/projects/project_6.jpg',
     description: {
-      ru: 'Формы с управляемыми и неуправляемыми элементами, включающая валидацию вводимых данных для обеспечения корректности и удобства использования.',
-      en: 'Forms with managed and unmanaged elements, including validation of input data to ensure correctness and ease of use.',
+      ru: 'Интерактивное веб-приложение, объединяющая аудиоплеер, виджеты погоды, организатор задач и слайдер изображений.',
+      en: 'An interactive web application that combines an audio player, weather widgets, a task organizer, and an image slider.',
     },
-    stack: ['Vite', 'TypeScript', 'React', 'Redux', 'Yup', 'HTML', 'SASS'],
+    stack: ['JavaScript', 'HTML', 'CSS'],
     links: {
-      github: 'https://github.com/p0lluxstar/RSS-React/tree/react-forms',
-      sait: 'https://forms-p0lluxstar.netlify.app/',
+      github:
+        'https://github.com/rolling-scopes-school/p0lluxstar-JSFEPRESCHOOL2022Q4/tree/momentum',
+      sait: 'https://momentum-p0lluxstar.netlify.app/',
     },
   },
+  // {
+  //   id: 12,
+  //   name: { ru: 'Проект 12', en: 'Project 12' },
+  //   imgSrc: 'assets/img/projects/project_12.jpg',
+  //   description: {
+  //     ru: 'Формы с управляемыми и неуправляемыми элементами, включающая валидацию вводимых данных для обеспечения корректности и удобства использования.',
+  //     en: 'Forms with managed and unmanaged elements, including validation of input data to ensure correctness and ease of use.',
+  //   },
+  //   stack: ['Vite', 'TypeScript', 'React', 'Redux', 'Yup', 'HTML', 'SASS'],
+  //   links: {
+  //     github: 'https://github.com/p0lluxstar/RSS-React/tree/react-forms',
+  //     sait: 'https://forms-p0lluxstar.netlify.app/',
+  //   },
+  // },
 ];
