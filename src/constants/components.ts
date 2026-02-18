@@ -58,6 +58,28 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
+    id: 15,
+    name: { ru: 'Проект 15', en: 'Project 15' },
+    imgSrc: 'assets/img/projects/project_15.jpg',
+    description: {
+      ru: 'Цифровая платформа для прямого взаимодействия между избирателями и представителями власти.',
+      en: 'A digital platform for direct interaction between voters and government representatives.',
+    },
+    stack: [
+      'NestJS',
+      'React',
+      'TypeScript',
+      'PostgreSQL',
+      'Tailwind',
+      'JWT auth',
+      'Prisma',
+      'Docker',
+    ],
+    links: {
+      github: 'https://github.com/viksiko/monitorium',
+    },
+  },
+  {
     id: 1,
     name: { ru: 'Проект 1', en: 'Project 1' },
     imgSrc: 'assets/img/projects/project_1.jpg',
@@ -106,6 +128,28 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
+    id: 5,
+    name: { ru: 'Проект 5', en: 'Project 5' },
+    imgSrc: 'assets/img/projects/project_5.jpg',
+    description: {
+      ru: 'Full-stack приложение для мониторинга температуры и влажности в помещении с использованием датчика (DHT11/DHT22) и микроконтроллера ESP32.',
+      en: 'A full-stack application designed to monitor indoor temperature and humidity using a sensor (DHT11/DHT22) and an ESP32 microcontroller.',
+    },
+    stack: [
+      'Python',
+      'Django',
+      'JavaScript',
+      'SQLite',
+      'Docker',
+      'HTML',
+      'CSS',
+    ],
+    links: {
+      github: 'https://github.com/p0lluxstar/climate-control',
+      sait: 'https://climatecontrol.p0lluxstar.ru/',
+    },
+  },
+  {
     id: 3,
     name: { ru: 'Проект 3', en: 'Project 3' },
     imgSrc: 'assets/img/projects/project_3.jpg',
@@ -127,28 +171,6 @@ export const PROJECTS_DATA: IProjectData[] = [
     links: {
       github: 'https://github.com/p0lluxstar/graphiql-app',
       sait: 'https://restfull-graphiql.netlify.app/',
-    },
-  },
-  {
-    id: 5,
-    name: { ru: 'Проект 5', en: 'Project 5' },
-    imgSrc: 'assets/img/projects/project_5.jpg',
-    description: {
-      ru: 'Full-stack приложение для мониторинга температуры и влажности в помещении с использованием датчика (DHT11/DHT22) и микроконтроллера ESP32.',
-      en: 'A full-stack application designed to monitor indoor temperature and humidity using a sensor (DHT11/DHT22) and an ESP32 microcontroller.',
-    },
-    stack: [
-      'Python',
-      'Django',
-      'JavaScript',
-      'SQLite',
-      'Docker',
-      'HTML',
-      'CSS',
-    ],
-    links: {
-      github: 'https://github.com/p0lluxstar/climate-control',
-      sait: 'https://climatecontrol.p0lluxstar.ru/',
     },
   },
   {
@@ -192,21 +214,6 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
-    id: 11,
-    name: { ru: 'Проект 11', en: 'Project 11' },
-    imgSrc: 'assets/img/projects/project_11.jpg',
-    description: {
-      ru: 'Адаптивный и интерактивный двух страничный сайт со слайдером и пагинацией. Стили и графика оформлены по макету из Figma.',
-      en: 'Adaptive and interactive two-page website with slider and pagination. Styles and graphics are designed according to the Figma layout.',
-    },
-    stack: ['JavaScript', 'HTML', 'SASS', 'Figma'],
-    links: {
-      github:
-        'https://github.com/rolling-scopes-school/p0lluxstar-JSFE2023Q1/tree/shelter-part2',
-      sait: 'https://cozyhouse-p0lluxstar.netlify.app/',
-    },
-  },
-  {
     id: 8,
     name: { ru: 'Проект 8', en: 'Project 8' },
     imgSrc: 'assets/img/projects/project_8.jpg',
@@ -236,20 +243,35 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
-    id: 6,
-    name: { ru: 'Проект 6', en: 'Project 6' },
-    imgSrc: 'assets/img/projects/project_6.jpg',
+    id: 11,
+    name: { ru: 'Проект 11', en: 'Project 11' },
+    imgSrc: 'assets/img/projects/project_11.jpg',
     description: {
-      ru: 'Интерактивное веб-приложение, объединяющая аудиоплеер, виджеты погоды, организатор задач и слайдер изображений.',
-      en: 'An interactive web application that combines an audio player, weather widgets, a task organizer, and an image slider.',
+      ru: 'Адаптивный и интерактивный двух страничный сайт со слайдером и пагинацией. Стили и графика оформлены по макету из Figma.',
+      en: 'Adaptive and interactive two-page website with slider and pagination. Styles and graphics are designed according to the Figma layout.',
     },
-    stack: ['JavaScript', 'HTML', 'CSS'],
+    stack: ['JavaScript', 'HTML', 'SASS', 'Figma'],
     links: {
       github:
-        'https://github.com/rolling-scopes-school/p0lluxstar-JSFEPRESCHOOL2022Q4/tree/momentum',
-      sait: 'https://momentum-p0lluxstar.netlify.app/',
+        'https://github.com/rolling-scopes-school/p0lluxstar-JSFE2023Q1/tree/shelter-part2',
+      sait: 'https://cozyhouse-p0lluxstar.netlify.app/',
     },
   },
+  // {
+  //   id: 6,
+  //   name: { ru: 'Проект 6', en: 'Project 6' },
+  //   imgSrc: 'assets/img/projects/project_6.jpg',
+  //   description: {
+  //     ru: 'Интерактивное веб-приложение, объединяющая аудиоплеер, виджеты погоды, организатор задач и слайдер изображений.',
+  //     en: 'An interactive web application that combines an audio player, weather widgets, a task organizer, and an image slider.',
+  //   },
+  //   stack: ['JavaScript', 'HTML', 'CSS'],
+  //   links: {
+  //     github:
+  //       'https://github.com/rolling-scopes-school/p0lluxstar-JSFEPRESCHOOL2022Q4/tree/momentum',
+  //     sait: 'https://momentum-p0lluxstar.netlify.app/',
+  //   },
+  // },
   // {
   //   id: 12,
   //   name: { ru: 'Проект 12', en: 'Project 12' },
