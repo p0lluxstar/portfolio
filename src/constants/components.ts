@@ -77,6 +77,7 @@ export const PROJECTS_DATA: IProjectData[] = [
     ],
     links: {
       github: 'https://github.com/viksiko/monitorium',
+      sait: 'http://178.207.9.52:64080/',
     },
   },
   {
