@@ -19,6 +19,8 @@ export const SKILLS = [
   'NextJS',
   'Vite',
   'NestJS',
+  'PHP',
+  'Laravel',
   'Webpack',
   'PostgreSQL',
   'RestAPI',
