@@ -189,6 +189,19 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
+    id: 16,
+    name: { ru: 'Проект 16', en: 'Project 16' },
+    imgSrc: 'assets/img/projects/project_16.jpg',
+    description: {
+      ru: 'Full-stack приложение с аутентификацией пользователей, позволяющее управлять персональным списком желаний.',
+      en: 'A full-stack application with user authentication that allows you to manage your personal wish list.',
+    },
+    stack: ['PHP', 'Laravel', 'Vue', 'MySQL', 'HTML', 'SASS'],
+    links: {
+      github: 'https://github.com/p0lluxstar/piblwish',
+    },
+  },
+  {
     id: 7,
     name: { ru: 'Проект 7', en: 'Project 7' },
     imgSrc: 'assets/img/projects/project_7.jpg',
@@ -201,6 +214,7 @@ export const PROJECTS_DATA: IProjectData[] = [
       github: 'https://github.com/p0lluxstar/request-processing-system',
     },
   },
+
   {
     id: 14,
     name: { ru: 'Проект 14', en: 'Project 14' },
@@ -214,6 +228,7 @@ export const PROJECTS_DATA: IProjectData[] = [
       github: 'https://github.com/p0lluxstar/parser-vprok',
     },
   },
+
   {
     id: 8,
     name: { ru: 'Проект 8', en: 'Project 8' },
@@ -243,21 +258,21 @@ export const PROJECTS_DATA: IProjectData[] = [
       sait: 'https://minesweeper-p0lluxstar.netlify.app/',
     },
   },
-  {
-    id: 11,
-    name: { ru: 'Проект 11', en: 'Project 11' },
-    imgSrc: 'assets/img/projects/project_11.jpg',
-    description: {
-      ru: 'Адаптивный и интерактивный двух страничный сайт со слайдером и пагинацией. Стили и графика оформлены по макету из Figma.',
-      en: 'Adaptive and interactive two-page website with slider and pagination. Styles and graphics are designed according to the Figma layout.',
-    },
-    stack: ['JavaScript', 'HTML', 'SASS', 'Figma'],
-    links: {
-      github:
-        'https://github.com/rolling-scopes-school/p0lluxstar-JSFE2023Q1/tree/shelter-part2',
-      sait: 'https://cozyhouse-p0lluxstar.netlify.app/',
-    },
-  },
+  // {
+  //   id: 11,
+  //   name: { ru: 'Проект 11', en: 'Project 11' },
+  //   imgSrc: 'assets/img/projects/project_11.jpg',
+  //   description: {
+  //     ru: 'Адаптивный и интерактивный двух страничный сайт со слайдером и пагинацией. Стили и графика оформлены по макету из Figma.',
+  //     en: 'Adaptive and interactive two-page website with slider and pagination. Styles and graphics are designed according to the Figma layout.',
+  //   },
+  //   stack: ['JavaScript', 'HTML', 'SASS', 'Figma'],
+  //   links: {
+  //     github:
+  //       'https://github.com/rolling-scopes-school/p0lluxstar-JSFE2023Q1/tree/shelter-part2',
+  //     sait: 'https://cozyhouse-p0lluxstar.netlify.app/',
+  //   },
+  // },
   // {
   //   id: 6,
   //   name: { ru: 'Проект 6', en: 'Project 6' },
