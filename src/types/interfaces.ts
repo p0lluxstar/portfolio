@@ -8,4 +8,5 @@ export interface IProjectData {
     github?: string;
     sait?: string;
   };
+  vpn?: boolean;
 }

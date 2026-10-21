@@ -9,7 +9,7 @@ export default function Logo(): JSX.Element {
       </div>
       <h3>
         <a href={URL_GITHUB} target="blank" className={styles.link}>
-          АE
+          @p0lluxstar
         </a>
       </h3>
     </div>

@@ -31,12 +31,50 @@ export const SKILLS = [
   'WordPress',
   'Joomla',
   'Docker',
+  'Python',
   'Eslint',
   'Prettier',
   'Husky',
 ];
 
 export const PROJECTS_DATA: IProjectData[] = [
+  {
+    id: 15,
+    name: { ru: 'Проект 15', en: 'Project 15' },
+    imgSrc: 'assets/img/projects/project_15.jpg',
+    description: {
+      ru: 'Цифровая платформа для прямого взаимодействия между избирателями и представителями власти. Разработан в команде.',
+      en: 'A digital platform for direct interaction between voters and government representatives. Developed by a team.',
+    },
+    stack: [
+      'NestJS',
+      'React',
+      'TypeScript',
+      'PostgreSQL',
+      'Tailwind',
+      'JWT auth',
+      'Prisma',
+      'Docker',
+    ],
+    links: {
+      github: 'https://github.com/viksiko/monitorium',
+      sait: 'https://monitorium.p0lluxstar.ru/',
+    },
+  },
+  {
+    id: 16,
+    name: { ru: 'Проект 16', en: 'Project 16' },
+    imgSrc: 'assets/img/projects/project_16.jpg',
+    description: {
+      ru: 'Full-stack приложение с авторизацией для ведения списков желаний, списков дел, заметок и сборов. Позволяет делиться целями с друзьями и совместно собирать средства на покупки и подарки.',
+      en: 'A full-stack application with authorization for managing wish lists, to-do lists, notes, and collections. Allows you to share goals with friends and collectively raise funds for purchases and gifts.',
+    },
+    stack: ['PHP', 'Laravel', 'Claude', 'Vue', 'MySQL', 'SASS'],
+    links: {
+      github: 'https://github.com/p0lluxstar/piblwish',
+      sait: 'https://piblwish.p0lluxstar.ru/',
+    },
+  },
   {
     id: 13,
     name: { ru: 'Проект 13', en: 'Project 13' },
@@ -59,29 +97,7 @@ export const PROJECTS_DATA: IProjectData[] = [
       sait: 'https://mstore.p0lluxstar.ru/',
     },
   },
-  {
-    id: 15,
-    name: { ru: 'Проект 15', en: 'Project 15' },
-    imgSrc: 'assets/img/projects/project_15.jpg',
-    description: {
-      ru: 'Цифровая платформа для прямого взаимодействия между избирателями и представителями власти.',
-      en: 'A digital platform for direct interaction between voters and government representatives.',
-    },
-    stack: [
-      'NestJS',
-      'React',
-      'TypeScript',
-      'PostgreSQL',
-      'Tailwind',
-      'JWT auth',
-      'Prisma',
-      'Docker',
-    ],
-    links: {
-      github: 'https://github.com/viksiko/monitorium',
-      sait: 'http://178.207.9.52:64080/',
-    },
-  },
+
   {
     id: 1,
     name: { ru: 'Проект 1', en: 'Project 1' },
@@ -110,8 +126,8 @@ export const PROJECTS_DATA: IProjectData[] = [
     name: { ru: 'Проект 2', en: 'Project 2' },
     imgSrc: 'assets/img/projects/project_2.jpg',
     description: {
-      ru: 'Full-Stack приложение для обмена сообщениями в реальном времени с регистрацией.',
-      en: 'A full-stack application for real-time messaging with registration.',
+      ru: 'Full-Stack приложение для обмена сообщениями в реальном времени с базовой регистрацией.',
+      en: 'A full-stack application for real-time messaging with basic registration.',
     },
     stack: [
       'Vite',
@@ -135,8 +151,8 @@ export const PROJECTS_DATA: IProjectData[] = [
     name: { ru: 'Проект 5', en: 'Project 5' },
     imgSrc: 'assets/img/projects/project_5.jpg',
     description: {
-      ru: 'Full-stack приложение для мониторинга температуры и влажности в помещении с использованием датчика (DHT11/DHT22) и микроконтроллера ESP32.',
-      en: 'A full-stack application designed to monitor indoor temperature and humidity using a sensor (DHT11/DHT22) and an ESP32 microcontroller.',
+      ru: 'Приложение для мониторинга температуры и влажности в помещении с использованием датчика (DHT11/DHT22) и микроконтроллера ESP32.',
+      en: 'Application designed to monitor indoor temperature and humidity using a sensor (DHT11/DHT22) and an ESP32 microcontroller.',
     },
     stack: [
       'Python',
@@ -177,6 +193,19 @@ export const PROJECTS_DATA: IProjectData[] = [
     },
   },
   {
+    id: 17,
+    name: { ru: 'Проект 17', en: 'Project 17' },
+    imgSrc: 'assets/img/projects/project_17.jpg',
+    description: {
+      ru: 'Прототип советчика для оператора производства дизельного топлива. Разработан в команде в рамках хакатона «Hефтекод 2026».',
+      en: 'A prototype advisor for a diesel fuel production operator. Developed by a team as part of the “Neftcode 2026” hackathon.',
+    },
+    stack: ['Python', 'FastAPI', 'Cursor', 'Docker Images'],
+    links: {
+      github: 'https://github.com/EGSP/hackneft',
+    },
+  },
+  {
     id: 4,
     name: { ru: 'Проект 4', en: 'Project 4' },
     imgSrc: 'assets/img/projects/project_4.jpg',
@@ -189,34 +218,8 @@ export const PROJECTS_DATA: IProjectData[] = [
       github: 'https://github.com/p0lluxstar/ramapi',
       sait: 'https://ramapi.vercel.app/',
     },
+    vpn: true,
   },
-  {
-    id: 16,
-    name: { ru: 'Проект 16', en: 'Project 16' },
-    imgSrc: 'assets/img/projects/project_16.jpg',
-    description: {
-      ru: 'Full-stack приложение с аутентификацией пользователей, позволяющее управлять персональным списком желаний.',
-      en: 'A full-stack application with user authentication that allows you to manage your personal wish list.',
-    },
-    stack: ['PHP', 'Laravel', 'Vue', 'MySQL', 'HTML', 'SASS'],
-    links: {
-      github: 'https://github.com/p0lluxstar/piblwish',
-    },
-  },
-  {
-    id: 7,
-    name: { ru: 'Проект 7', en: 'Project 7' },
-    imgSrc: 'assets/img/projects/project_7.jpg',
-    description: {
-      ru: 'REST API сервис для управления обращениями пользователей. Только backend часть.',
-      en: 'The REST API is a service for managing user requests. Only the backend part.',
-    },
-    stack: ['Node.js', 'TypeScript', 'Express', 'SQLite', 'Prisma'],
-    links: {
-      github: 'https://github.com/p0lluxstar/request-processing-system',
-    },
-  },
-
   {
     id: 14,
     name: { ru: 'Проект 14', en: 'Project 14' },
@@ -242,7 +245,7 @@ export const PROJECTS_DATA: IProjectData[] = [
     stack: ['JavaScript', 'HTML', 'CSS'],
     links: {
       github: 'https://github.com/p0lluxstar/roguelike',
-      sait: 'https://roguelike-p0lluxstar.netlify.app/',
+      sait: 'https://roguelike.p0lluxstar.ru/',
     },
   },
   {
@@ -257,7 +260,7 @@ export const PROJECTS_DATA: IProjectData[] = [
     links: {
       github:
         'https://github.com/rolling-scopes-school/p0lluxstar-JSFE2023Q1/tree/minesweeper',
-      sait: 'https://minesweeper-p0lluxstar.netlify.app/',
+      sait: 'https://minesweeper.p0lluxstar.ru/',
     },
   },
   // {

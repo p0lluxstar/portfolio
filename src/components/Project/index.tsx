@@ -50,7 +50,8 @@ export default function ProjectTest({ props }: ProjectProps): JSX.Element {
                   rel="noopener noreferrer"
                   className={`${styles.link} ${styles.linkIcon}`}
                 >
-                  <i aria-hidden="true" className="fa fa fa-external-link"></i>
+                  <i aria-hidden="true" className="fa fa-external-link"></i>
+                  {props.vpn && <span className={styles.vpnBadge}>VPN</span>}
                 </a>
               )}
             </div>

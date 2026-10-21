@@ -1,5 +1,6 @@
-$mobile: 640px;
+$mobile: 800px;
 $mobile700: 700px;
+$mobile400: 400px;
 
 @mixin mobile {
   @media (max-width: #{$mobile}) {
@@ -9,6 +10,12 @@ $mobile700: 700px;
 
 @mixin mobile700 {
   @media (max-width: #{$mobile700}) {
+    @content;
+  }
+}
+
+@mixin mobile400 {
+  @media (max-width: #{$mobile400}) {
     @content;
   }
 }

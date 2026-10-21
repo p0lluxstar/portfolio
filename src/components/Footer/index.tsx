@@ -8,7 +8,7 @@ export default function Footer(): JSX.Element {
         target="blank"
         className={`${styles.link} ${styles.footerLink}`}
       >
-        {new Date().getFullYear()} AE
+        {new Date().getFullYear()} @p0lluxstar
       </a>
     </footer>
   );
